@@ -1,0 +1,1 @@
+document.getElementById("dem").style = "display: none"

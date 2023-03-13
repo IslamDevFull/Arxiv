@@ -1,0 +1,2656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Dars 1v</title>
+    <style>
+        *{transition: all 3s;}
+        body{height: 5000px;}
+        .html,.css{
+            width: 300px; height: 300px;
+            background-color: rgb(30,30,30);
+            float: left;
+            margin-right: 20px;
+        }
+        h2{text-align: center;}
+        h4{
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            border: 2px solid grey;
+            margin: 0 0 5px 0;
+        }
+        .natija{
+            text-align: center;
+            position: relative;
+            top: -40px;
+            font-size: 25px;
+            float: left;
+        }
+        .natija h3{margin: 0;}
+        .l{margin-left: 20px;}
+        code{color: rgb(128,128,128);}
+        .white{color: white;}
+        .blue{color: rgb(86,156,214);}
+        .selektor{color: rgb(215,186,125);}
+        .figura{color: rgb(241,215,0);}
+        .fan{color: rgb(156,220,254);}
+        .nuqta{color: rgb(212,212,212);}
+        .string{color: rgb(206,145,120);}
+        .red{color: red; font-weight: bold;}
+        .number{color: rgb(181,206,168);}
+        .url{color: rgb(220, 220, 170);}
+        .qavs{color: rgb(218, 86, 133);}
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2>Цвет</h2>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <td>
+                <details>
+        <summary>color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">color:</span> CSS свойство color задает цвет текста элемента. Значение цвета допускается указывать как в шестнадцатиричной системе, так и в системах RGB, RGBA, HSL, HSLA, так и с помощью предопределенных цветов.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello world</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><code class="fan">color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_1.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>opacity</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">opacity:</span> CSS свойство opacitycss3 определяет уровень прозрачности для элемента (1 - элемент непрозрачный (это значение по умолчанию), 0,5/50% - среднее значение, 0 - элемент полностью прозрачный).
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>0.5</td>
+                <td>определяет уровень прозрачности для элемента</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello world</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><code class="fan">opacity</code><code class="nuqta">:</code> <code class="number">0.2</code><code class="nuqta">;</code><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_2.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+    </table>
+    <h2>Фон</h2>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <td>
+                <details>
+        <summary>background-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-color:</span> CSS свойство background-color определяет цвет фона элемента, Значение цвета допускается указывать как в шестнадцатиричной системе, так и в системах RGB, RGBA, HSL, HSLA, так и с помощью предопределенных цветов.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-color</code><code class="nuqta">:</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_3.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-image</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-image:</span> CSS свойство background-image задает одно или несколько фоновых изображений для элемента.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>url('URL')</td>
+                <td>URL-адрес изображения. Для того, чтобы указать более одного изображения, необходимо перечислить URL-адреса изображений через запятую.</td>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Фоновое изображение не отображается. <b>Значение по умолчанию.</b></td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+                <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_4.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-attachment</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-attachment:</span> CSS свойство background-attachment устанавливает поведение фонового изображения во время прокрутки страницы. По умолчанию изображение прокручивается с остальной частью страницы, но допускается также зафиксировать фон относительно уровня просмотра.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>scroll</td>
+                <td>Задний фон прокручивается вместе с элементом. Значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>Фон фиксируется относительно уровня просмотра.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+                <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>
+                <code class="fan">background-attachment</code><code class="nuqta">:</code> <code class="string">fixed</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_5.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-repeat</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-repeat:</span> CSS свойство устанавливает, как будет повторяться фоновое изображение. По умолчанию фоновое изображение повторяется по горизонтали и вертикали.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>repeat</td>
+                <td>Фоновое изображение будет повторяться как по вертикали, так и по горизонтали. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>repeat-x</td>
+                <td>Фоновое изображение будет повторяться по горизонтали (по оси x).</td>
+            </tr>
+            <tr>
+                <td>repeat-y</td>
+                <td>Фоновое изображение будет повторяться по вертикали (по оси y).</td>
+            </tr>
+            <tr>
+                <td>no-repeat</td>
+                <td>Фоновое изображение не будет повторяться.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>
+                <code class="fan">background-repeat</code><code class="nuqta">:</code> <code class="string">repeat-x</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_6.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-size</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-size:</span> CSS свойство определяет размер фонового изображения/-ий.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>auto</td>
+                <td>Фоновое изображение содержит свою ширину и высоту. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Устанавливает ширину и высоту фонового изображения. Первое значение устанавливает ширину, второе значение задает высоту. Если указано только одно значение, то для второго устанавливается значение auto.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Устанавливает ширину и высоту фонового изображения в процентах от родительского элемента. Первое значение устанавливает ширину, второе значение задает высоту. Если указано только одно значение, то для второго устанавливается значение auto.</td>
+            </tr>
+            <tr>
+                <td>cover</td>
+                <td>Масштабирует фоновое изображение под размеры элемента. Некоторые части фонового изображения могут быть скрыты из поля зрения.</td>
+            </tr>
+            <tr>
+                <td>contain</td>
+                <td>Масштабирует фоновое изображение, чтобы оно целиком поместилось внутри элемента.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+                <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>    
+                <code class="fan">background-size</code><code class="nuqta">:</code> <code class="number">200px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_7.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-position</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-position:</span> CSS свойство задает положение (позицию) фонового изображения. По умолчанию, фоновое изображение размещается в верхнем левом углу элемента и повторяется по вертикали и горизонтали.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>
+                    left top
+                    left center
+                    left bottom
+                    right top
+                    right center
+                    right bottom
+                    center top
+                    center center
+                    center bottom
+                </td>
+                <td>Задает положение изображения. Первое значение-горизонтальное положение, а второе значение вертикальное. Если вы указываете только одно ключевое слово, другое значение будет "center"</td>
+            </tr>
+            <tr>
+                <td>x% y%</td>
+                <td>Задает положение изображения. Первое значение-горизонтальное положение, а второе значение вертикальное. Левый верхний угол имеет 0% 0% (это значение по умолчанию). В правом нижнем углу 100% 100%. Если указано только одно значение, то другое значение будет 50%.</td>
+            </tr>
+            <tr>
+                <td>x y</td>
+                <td>Задает положение изображения. Первое значение-горизонтальное положение, а второе значение вертикальное. Левый верхний угол имеет 0 0. Значения могут быть в пикселях, или других единицах измерения CSS. Если указано только одно значение, то другое значение будет 50%. Вы можете совместно использовать проценты и единицы измерения.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+                <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>                
+                <code class="fan">background-repeat</code><code class="nuqta">:</code> <code class="string">no-repeat</code><code class="nuqta">;</code>
+                <code class="fan">background-size</code><code class="nuqta">:</code> <code class="number">300px</code><code class="nuqta">;</code><br>
+                <code class="fan">background-position</code><code class="nuqta">:</code> <code class="number">100px 100px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_8.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background-blend-mode</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background-blend-mode:</span> CSS свойство задает положение (позицию) фонового изображения. По умолчанию, фоновое изображение размещается в верхнем левом углу элемента и повторяется по вертикали и горизонтали.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>normal</td>
+                <td>Устанавливает режим смешивания на нормальный. Данное значение установлено по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>multiply</td>
+                <td>Устанавливает режим смешивания multiply (режим затемнения).</td>
+            </tr>
+            <tr>
+                <td>screen</td>
+                <td>Устанавливает режим смешивания screen (режим осветления).</td>
+            </tr>
+            <tr>
+                <td>overlay</td>
+                <td>Устанавливает режим смешивания overlay (режим контраста).</td>
+            </tr>
+            <tr>
+                <td>darken</td>
+                <td>Устанавливает режим смешивания darken (режим затемнения).</td>
+            </tr>
+            <tr>
+                <td>lighten</td>
+                <td>Устанавливает режим смешивания lighten (режим осветления).</td>
+            </tr>
+            <tr>
+                <td>color-dodge</td>
+                <td>Устанавливает режим смешивания color-dodge (режим осветления).</td>
+            </tr>
+            <tr>
+                <td>color-burn</td>
+                <td>Устанавливает режим смешивания color-burn (режим затемнения).</td>
+            </tr>
+            <tr>
+                <td>hard-light</td>
+                <td>Устанавливает режим смешивания hard-light (режим контраста).</td>
+            </tr>
+            <tr>
+                <td>soft-light</td>
+                <td>Устанавливает режим смешивания soft-light (режим контраста).</td>
+            </tr>
+            <tr>
+                <td>difference</td>
+                <td>Устанавливает режим смешивания difference (режим сравнения).</td>
+            </tr>
+            <tr>
+                <td>exclusion</td>
+                <td>Устанавливает режим смешивания exclusion (режим сравнения).</td>
+            </tr>
+            <tr>
+                <td>hue</td>
+                <td>Устанавливает режим смешивания hue (компонентный режим).</td>
+            </tr>
+            <tr>
+                <td>saturation</td>
+                <td>Устанавливает режим смешивания saturation (компонентный режим).</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Устанавливает режим смешивания color (компонентный режим).</td>
+            </tr>
+            <tr>
+                <td>luminosity</td>
+                <td>Устанавливает режим смешивания liminosity (компонентный режим).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background-image</code><code class="nuqta">:</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code><code class="nuqta">;</code>
+                <code class="fan">background-repeat</code><code class="nuqta">:</code> <code class="string">no-repeat</code><code class="nuqta">;</code>
+                <code class="fan">background-size</code><code class="nuqta">:</code> <code class="number">300px</code><code class="nuqta">;</code><br>
+                <code class="fan">background-position</code><code class="nuqta">:</code> <code class="number">100px 100px</code><code class="nuqta">;</code>
+                <code class="fan">background-blend-mode</code><code class="nuqta">:</code> <code class="string">multiply</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_9.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>background</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">background:</span> CSS свойство задает положение (позицию) фонового изображения. По умолчанию, фоновое изображение размещается в верхнем левом углу элемента и повторяется по вертикали и горизонтали.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div style="border: 2px solid yellow; width: 170px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">body</code><code>></code><code><</code><code>/</code><code class="blue">body</code><code>></code>
+        </div>
+        <div style="border: 2px solid yellow; width: 470px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">body</code><code class="figura">{</code><br><code class="fan">background</code><code class="nuqta">:</code> <code class="string">gray</code> <code class="url">url</code><code class="qavs">(</code><code class="string">porsh.png</code><code class="qavs">)</code> <code class="string">no-repeat</code> <code class="number">100px 100px</code> <code class="nuqta">/</code> <code class="number">300px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_10.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+    </table>
+    <h2>Границы</h2>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <td>
+                <details>
+        <summary>border-top-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top-style</span> CSS свойство устанавливает стиль верхней границы.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-top-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_11.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-top-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top-width</span> CSS свойство устанавливает ширину верхней границы. Необходимо всегда объявлять стиль границы, прежде чем вы задаёте их ширину.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-top-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-top-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_12.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-top-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top-color</span> CSS свойство устанавливает цвет верхней границы. Всегда объявляйте свойства стиля границ до того, как вы задаёте для них цвет - элемент должен иметь границы, прежде чем вы зададите цвет.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-top-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-top-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+            <br><code class="fan">border-top-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_13.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-top</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top</span> CSS свойство устанавливает все свойства верхней границы в одном объявлении. Разрешается использовать объявление в котором одно из значений отсутствует.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-top</code><code class="nuqta">:</code> <code class="number">20px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_14.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-right-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-right-style</span> CSS свойство устанавливает стиль правой границы.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-right-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_15.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-right-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-right-width</span> CSS свойство устанавливает ширину правой границы. Необходимо всегда объявлять стиль границы, прежде чем вы задаёте их ширину.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-right-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-right-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_16.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-right-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-right-color</span> CSS свойство устанавливает цвет правой границы. Всегда объявляйте свойства стиля границ до того, как вы задаёте для них цвет - элемент должен иметь границы, прежде чем вы зададите цвет.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-right-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-right-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+            <br><code class="fan">border-right-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_17.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-right</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-right</span> CSS свойство устанавливает все свойства правой границы в одном объявлении. Разрешается использовать объявление в котором одно из значений отсутствует.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-right</code><code class="nuqta">:</code> <code class="number">20px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_17.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom-style</span> CSS свойство устанавливает стиль нижней границы.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-bottom-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_18.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom-width</span> CSS свойство устанавливает ширину нижней границы. Необходимо всегда объявлять стиль границы, прежде чем вы задаёте их ширину.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-bottom-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-bottom-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_19.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom-color</span> CSS свойство устанавливает цвет нижней границы. Всегда объявляйте свойства стиля границ до того, как вы задаёте для них цвет - элемент должен иметь границы, прежде чем вы зададите цвет.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-bottom-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-bottom-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+            <br><code class="fan">border-bottom-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_20.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom</span> CSS свойство устанавливает все свойства нижней границы в одном объявлении. Разрешается использовать объявление в котором одно из значений отсутствует.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-bottom</code><code class="nuqta">:</code> <code class="number">20px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_20.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-left-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-left-style</span> CSS свойство устанавливает стиль левой границы.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-left-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_21.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-left-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-left-width</span> CSS свойство устанавливает ширину левой границы. Необходимо всегда объявлять стиль границы, прежде чем вы задаёте их ширину.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-left-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-left-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_22.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-left-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-left-color</span> CSS свойство устанавливает цвет левой границы. Всегда объявляйте свойства стиля границ до того, как вы задаёте для них цвет - элемент должен иметь границы, прежде чем вы зададите цвет.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-left-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">border-left-width</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+            <br><code class="fan">border-left-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_23.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-left</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-left</span> CSS свойство устанавливает все свойства левой границы в одном объявлении. Разрешается использовать объявление в котором одно из значений отсутствует.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-left</code><code class="nuqta">:</code> <code class="number">20px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_23.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-style</span> CSS свойство устанавливает стиль для всех границ в одном объявлении. Это свойство может иметь от одного до четырех значений.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-style</code><code class="nuqta">:</code> <code class="string">dashed double dotted solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_24.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-width</span> CSS свойство устанавливает ширину для всех границ в одном объявлении. Это свойство может иметь от одного до четырех значений.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-style</code><code class="nuqta">:</code> <code class="string">dashed double dotted solid</code><code class="nuqta">;</code>
+                <br><code class="fan">border-width</code><code class="nuqta">:</code> <code class="number">5px 10px 15px 20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_25.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-color</span> CSS свойство устанавливает цвет для всех границ в одном объявлении. Это свойство может иметь от одного до четырех значений.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border-style</code><code class="nuqta">:</code> <code class="string">dashed double dotted solid</code><code class="nuqta">;</code>
+                <br><code class="fan">border-width</code><code class="nuqta">:</code> <code class="number">5px 10px 15px 20px</code><code class="nuqta">;</code>
+                <br><code class="fan">border-color</code><code class="nuqta">:</code> <code class="string">red green blue yellow</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_26.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border</span> CSS свойство позволяет установить все свойства границ в одном объявлении. Разрешается использовать объявление в котором одно из значений отсутствует.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Hello World</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_27.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-top-left-radius</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top-left-radius</span> CSS свойство определяет форму границы верхнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Определяет форму верхнего правого угла. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">b</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">b</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">b</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">border-top-left-radius</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_31.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-top-right-radius</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-top-right-radius</span> CSS свойство определяет форму границы верхнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Определяет форму верхнего правого угла. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">b</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">b</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">b</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">border-top-right-radius</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_28.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom-right-radius</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom-right-radius</span> CSS свойство определяет форму границы нижнего правого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Определяет форму верхнего правого угла. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">b</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">b</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">b</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">border-bottom-right-radius</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_29.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-bottom-left-radius</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-bottom-left-radius</span> CSS свойство определяет форму границы нижнего левого угла. Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Определяет форму верхнего правого угла. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">b</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">b</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">b</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">border-bottom-left-radius</code><code class="nuqta">:</code> <code class="number">20px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_30.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>border-radius</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">border-radius</span> CSS свойство позволяет определить форму границ элемента. Это свойство является короткой записью для четырёх свойств: Радиус скругления применяется ко всему заднему фону, либо фоновому изображению, заданными свойством background (даже если у элемента отсутствуют границы). Точное место отсечения определяется и задается значением свойства background-clip.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Определяет форму верхнего правого угла. Значение по умолчанию 0 (ноль). Отрицательные значения недопустимы.</td>
+            </tr>
+            <tr>
+                <td>%</td>
+                <td>Определяет форму верхнего правого угла в процентах. Отрицательные значения недопустимы.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">b</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">b</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">b</code><code class="figura">{</code><br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">border-radius</code><code class="nuqta">:</code> <code class="number">20px 0px 20px 0px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_32.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>outline-style</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">outline-style</span> Устанавливает стиль внешней границы элемента. В отличие от линии, задаваемой через border, линия через outline отображается вокруг элемента, не влияя на ширину блока или его положение.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>none</td>
+                <td>Указывает на отсутствие границы. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>hidden</td>
+                <td>
+                    Указывает на отсутствие границы как и значение none, но имеет более высокий приоритет.
+                    Например, если в таблице для первой ячейки задано значение none, а для второй (соседней) задана видимая граница, то граница между ячейками отображается. Если для первой ячейки таблицы задано значение hidden, а для второй (соседней) задана видимая граница, то граница между ячейками не будут отображаться.
+                </td>
+            </tr>
+            <tr>
+                <td>dotted</td>
+                <td>Точечная граница.</td>
+            </tr>
+            <tr>
+                <td>dashed</td>
+                <td>Пунктирная граница.</td>
+            </tr>
+            <tr>
+                <td>solid</td>
+                <td>Сплошная граница.</td>
+            </tr>
+            <tr>
+                <td>double</td>
+                <td>Двойная граница.</td>
+            </tr>
+            <tr>
+                <td>groove</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению ridge).</td>
+            </tr>
+            <tr>
+                <td>ridge</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению groove).</td>
+            </tr>
+            <tr>
+                <td>inset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению outset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как groove.</td>
+            </tr>
+            <tr>
+                <td>outset</td>
+                <td>Отображает границы с 3d эффектом (противоположно значению inset).При применении к ячейке таблицы с border-collapse : "collapse" - это значение ведет себя как ridge.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">outline-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_33.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>outline-width</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">outline-width</span> Определяет толщину внешней границы элемента. В отличие от свойства border-width, для outline-width нельзя задать границу для каждой стороны элемента индивидуально. Чтобы outline-width работал, необходимо установить у свойства outline-style любое значение кроме none.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>medium</td>
+                <td>Задает границу средней ширины. Это значение по умолчанию.</td>
+            </tr>
+            <tr>
+                <td>thin</td>
+                <td>Задает узкую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>thick</td>
+                <td>Задает толстую ширину границы.</td>
+            </tr>
+            <tr>
+                <td>length</td>
+                <td>Позволяет вам определить толщину границы (например - 7px).</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">outline-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-width</code><code class="nuqta">:</code> <code class="number">10px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_34.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>outline-color</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">outline-color</span> Указывает цвет внешней границы элемента. В отличие от линии, задаваемой через border, линия через свойство outline отображается вокруг элемента, не влияя на ширину блока или его положение.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <th>Значение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td>green</td>
+                <td>Определяет цвет текста (text)</td>
+            </tr>
+            <tr>
+                <td>rgb(0,128,0)</td>
+                <td>Определяет цвет текста (RGB)</td>
+            </tr>
+            <tr>
+                <td>rgba(0,128,0,0.5)</td>
+                <td>Определяет прозрачность цвет текста (RGBA)</td>
+            </tr>
+            <tr>
+                <td>hsl(120, 100%, 25%)</td>
+                <td>Определяет цвет текста (HSL)</td>
+            </tr>
+            <tr>
+                <td>hsla(120, 100%, 25%, 0.5)</td>
+                <td>Определяет прозрачность цвет текста (HSLA)</td>
+            </tr>
+            <tr>
+                <td>#00ff00</td>
+                <td>Определяет прозрачность цвет текста (HEX)</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">outline-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-width</code><code class="nuqta">:</code> <code class="number">10px</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_35.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>outline-offset</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">outline-offset</span> Устанавливает расстояние между рамкой, созданной с помощью свойства outline, и краем или границей элемента добавленной через border.
+        </p>
+        <h3>Значения свойства</h3>
+        <table class="table table-success table-striped table-bordered border-primary">
+            <tr>
+                <td>length</td>
+                <td>Задаёт расстояние от края элемента до рамки. Отрицательное значение отображает рамку внутри элемента, положительное — вокруг элемента.</td>
+            </tr>
+        </table>
+        <h3>Cинтаксис:</h3>
+        <div class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">outline-style</code><code class="nuqta">:</code> <code class="string">solid</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-width</code><code class="nuqta">:</code> <code class="number">10px</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-color</code><code class="nuqta">:</code> <code class="string">red</code><code class="nuqta">;</code>
+            <br><code class="fan">outline-offset</code><code class="nuqta">:</code> <code class="number">10px</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_36.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <details>
+        <summary>outline</summary>
+        <h3>Определение и применение</h3>
+        <p>
+            <span class="red">outline</span> Универсальное свойство, одновременно устанавливающее цвет, стиль и толщину внешней границы на всех четырёх сторонах элемента.
+        </p>
+        <h3>Cинтаксис:</h3>
+        <div style="width: 250px;" class="html">
+            <h4>html</h4>
+            <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        </div>
+        <div style="width: 350px;" class="css">
+            <h4>css</h4>
+            <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">outline</code><code class="nuqta">:</code> <code class="number">10px</code> <code class="string">solid</code> <code class="string">red</code><code class="nuqta">;</code>
+                <br><code class="figura">}</code>
+        </div>
+        <div class="natija">
+            <h3>Natija</h3>
+            <iframe style="border: 2px solid blue;" src="d_37.html" frameborder="1" width="600" height="300"></iframe>
+        </div>
+                </details>
+            </td>
+        </tr>
+    </table>
+    <h2>Отступы и поля</h2>
+    <table class="table table-success table-striped table-bordered border-primary">
+    <tr>
+        <td>
+            <details>
+    <summary>margin-top</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">margin-top</span> CSS свойство устанавливает величину внешнего отступа от верхнего края элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">margin-top</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_38.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>margin-right</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">margin-right</span> CSS свойство устанавливает величину внешнего отступа от правого края элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">margin-right</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_39.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>margin-bottom</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">margin-bottom</span> CSS свойство устанавливает величину внешнего отступа от нижнего края элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">margin-bottom</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_40.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>margin-left</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">margin-left</span> CSS свойство устанавливает величину внешнего отступа от левого края элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">margin-left</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_41.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>margin</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">margin</span> Универсальное CSS свойство устанавливает величину внешнего отступа от каждого края элемента в одном объявлении.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">margin</code><code class="nuqta">:</code> <code class="number">100px 100px 100px 100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_42.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>padding-top</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">padding-top</span> CSS свойство устанавливает верхний внутренний отступ элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">padding-top</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_43.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>padding-right</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">padding-right</span> CSS свойство устанавливает правый внутренний отступ элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">padding-right</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_44.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>padding-bottom</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">padding-bottom</span> CSS свойство устанавливает нижний внутренний отступ элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">padding-bottom</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_45.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>padding-left</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">padding-left</span> CSS свойство устанавливает левый внутренний отступ элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">padding-left</code><code class="nuqta">:</code> <code class="number">100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_46.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>padding</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">padding</span> Универсальное CSS свойство устанавливает величину внешнего отступа от каждого края элемента в одном объявлении.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет отступ в пикселях, см и др. единицах. Значение по умолчанию 0. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет отступ в процентах от содержащего блока родительского элемента. Допускаются отрицательные значения.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет отступ самостоятельно.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan">padding</code><code class="nuqta">:</code> <code class="number">100px 100px 100px 100px</code><code class="nuqta">;</code>
+        <br><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code><code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_47.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>width</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">width</span> Устанавливает ширину содержимого элемента. По умолчанию ширина зависит от типа элемента: блочные занимают всю доступную ширину; ширина строчно-блочных равна ширине их содержимому. Свойство width позволяет явно задать желаемую ширину элемента, несмотря на его исходное поведение.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет ширину в пикселях, см и др.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет ширину в процентах от содержащего блока родительского элемента.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет ширину самостоятельно. Это значение по умолчанию.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan l">width</code><code class="nuqta">:</code> <code class="number">50%</code><code class="nuqta">;</code>
+        <br><code class="fan l">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code> <code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code> <code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_48.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <details>
+    <summary>height</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">height</span> Устанавливает высоту содержимого элемента. По умолчанию высота определяется автоматически, исходя из содержимого элемента, но если задать фиксированное значение высоты, то она будет установлена, несмотря на объём содержимого. Если содержимое элемента превышает указанное значение высоты, то высота элемента останется неизменной, а содержимое будет отображаться поверх него. Из-за этой особенности может получиться наложение содержимого элементов друг на друга, когда элементы в коде HTML идут последовательно. Чтобы этого не произошло, добавьте свойство overflow со значением auto к стилю элемента.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>length</td>
+            <td>Определяет высоту в пикселях, см и др.</td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Определяет высоту в процентах от содержащего блока родительского элемента.</td>
+        </tr>
+        <tr>
+            <td>auto</td>
+            <td>Браузер вычисляет высоту самостоятельно. Это значение по умолчанию.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">h1</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h1</code><code>></code>
+        <code><</code><code class="blue">h2</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">h2</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan l">height</code><code class="nuqta">:</code> <code class="number">150px</code><code class="nuqta">;</code>
+        <br><code class="fan l">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code><br><code class="figura">}</code>
+        <br><cod class="selektor">h2</code><code class="figura">{</code> <code class="fan">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code> <code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_49.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+    </table>
+    <h2>Позиционирование</h2>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <td>
+                <details>
+    <summary>position</summary>
+    <h3>Определение и применение</h3>
+    <p>
+        <span class="red">position</span> CSS свойство position указывает какой тип позиционирования используется для элемента (статический, относительный, абсолютный или фиксированный).Совместно со свойством position используются такие CSS свойства как top, right, bottom и left, они позволяют произвести смещение позиционированного элемента относительно определенного края.
+    </p>
+    <h3>Значения свойства</h3>
+    <table class="table table-success table-striped table-bordered border-primary">
+        <tr>
+            <th>Значение</th>
+            <th>Описание</th>
+        </tr>
+        <tr>
+            <td>absolute</td>
+            <td>Абсолютное позиционирование. При смещении элемент сдвигается относительно заданного края его предка, при этом предок должен иметь значение position отличное от установленного по умолчанию - static, иначе отсчёт будет вестись относительно, указанного края окна браузера (как при position: fixed).</td>
+        </tr>
+        <tr>
+            <td>fixed</td>
+            <td>Фиксированное позиционирование. При смещении элемент сдвигается относительно заданного края окна браузера.</td>
+        </tr>
+        <tr>
+            <td>static</td>
+            <td>Статическое позиционирование. Элементы отображаются в том порядке, как они указаны в потоке HTML документа. Это значение по умолчанию.</td>
+        </tr>
+        <tr>
+            <td>relative</td>
+            <td>Относительное позиционирование. При смещении элемент сдвигается относительно его текущей позиции.</td>
+        </tr>
+        <tr>
+            <td>sticky</td>
+            <td>Это сочетание относительного и фиксированного позиционирования. Элемент рассматривается как позиционированный относительно, пока он не пересекает определённый порог, после чего рассматривается как фиксированный. Обычно применяется для фиксации заголовка на одном месте, пока содержимое, к которому относится заголовок, прокручивается на странице.</td>
+        </tr>
+    </table>
+    <h3>Cинтаксис:</h3>
+    <div style="width: 250px;" class="html">
+        <h4>html</h4>
+        <code><</code><code class="blue">div</code><code>></code><code class="white">Barkamol avlod</code><code><</code><code>/</code><code class="blue">div</code><code>></code>
+    </div>
+    <div style="width: 350px;" class="css">
+        <h4>css</h4>
+        <cod class="selektor">h1</code><code class="figura">{</code><br><code class="fan l">position</code><code class="nuqta">:</code> <code class="string">fixed</code><code class="nuqta">;</code>
+        <br><code class="fan l">border</code><code class="nuqta">:</code> <code class="number">5px</code> <code class="string">solid</code> <code class="string">green</code><code class="nuqta">;</code>
+        <br><code class="fan l">top</code><code class="nuqta">:</code> <code class="string">100px</code> ">green</code><code class="nuqta">;</code>
+        <br><code class="figura">}</code>
+    </div>
+    <div class="natija">
+        <h3>Natija</h3>
+        <iframe style="border: 2px solid blue;" src="d_50.html" frameborder="1" width="600" height="300"></iframe>
+    </div>
+            </details>
+        </td>
+    </tr>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
