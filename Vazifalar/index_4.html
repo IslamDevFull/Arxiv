@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS JS</title>
+    <style>
+        *{
+            transition: all 1s;
+        }
+        body{
+            padding: 0px;
+            margin: 0;
+        }
+        .non{display: none;}
+        .center{text-align: center;}
+        img{display: none;}
+        b{color: red;display: none;}
+        .ok{
+            width: 400px;
+            height: 600px;
+            padding: 10px;
+            border-style: outset;
+            border-width: 10px;
+            border-color: grey;
+            background: linear-gradient(to right, rgba(251, 208, 215,0.5), rgba(255, 71, 187,0.5));
+            position: absolute;
+        }
+        .ok:hover{
+            background-color: rgb(255, 255, 255,1);
+        }
+        .ok:hover{box-shadow: 0px 0px 20px 10px rgba(255, 112, 136, 0.301);}
+        h3{
+            margin: 0;
+        }
+        input{
+            margin-bottom: 45px;
+        }
+        i{color: red;display: none;font-size: 15px;}
+        /* form{display: none;} */
+        .container{
+            width: 100%;
+            position: absolute;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .div{
+            width: 103px;
+            height: 103px;
+            float: left;
+            animation: anime 7s linear infinite;
+            z-index: 1;
+        }
+        @keyframes anime{
+            0%{box-shadow: 0px 0px 0px 0px grey;}
+            10%{box-shadow: 1px 1px 5px 1px grey;}
+            20%{box-shadow: 2px 2px 5px 2px grey;}
+            30%{box-shadow: 3px 3px 5px 3px grey;}
+            40%{box-shadow: 2px 2px 5px 2px grey;}
+            50%{box-shadow: 1px 1px 5px 1px grey;}
+            80%{box-shadow: 0px 0px 0px 0px grey;}
+            90%{box-shadow: 0px 0px 0px 0px grey;}
+            100%{box-shadow: 0px 0px 0px 0px grey;}
+        }
+        .reset,a{
+            background: linear-gradient(to right, pink, #ff00a2);
+            padding: 10px;
+            border: 0;
+            border-radius: 20px 0;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .reset:hover,a:hover{
+            box-shadow: 0px 0px 10px 5px #ff00a235;
+        }
+        .reset:active,a:active{
+            background: linear-gradient(to right, rgb(251, 208, 215), rgb(255, 71, 187));
+            /* background: linear-gradient(to right, pink, #ff00a2); */
+        }
+        @media screen and (max-width: 500px){
+            .ok{
+                width: 270px;
+                height: 450px;
+            }
+            input{
+                margin: 8px;
+                width: 100px;
+            }
+            img{
+                width: 12px;
+            }
+            b{font-size: 12px;}
+            .reset,a{
+                padding: 7px;
+                margin-top: 35px;
+            }
+            .div{
+                width: 56px;
+                height: 56px;
+            }
+            h1{font-size: 25px;}
+            h3{font-size: 15px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ok" id="ok">
+            <form action="">
+                <h1 class="center" style="text-shadow: 1px 1px 5px #000000,-1px -1px 5px #000000; color: white;">Ro'yxatdan o'tish</h1>
+                <h3>Ism</h3>
+                <input type="text" id="v1"> <img src="https://pluspng.com/img-png/green-tick-png-hd-green-check-marks-clipart-library-7855.png" id="p1" width="25"> <img src="https://avatanplus.com/files/resources/original/5ce1ea638f5be16ad27b9503.png" id="p6" width="25"> <b id="b1">Majburiy to'ldirish</b>
+                <h3>Familiya</h3>
+                <input type="text" id="v2"> <img src="https://pluspng.com/img-png/green-tick-png-hd-green-check-marks-clipart-library-7855.png" id="p2" width="25"> <img src="https://avatanplus.com/files/resources/original/5ce1ea638f5be16ad27b9503.png" id="p7" width="25"> <b id="b2">Majburiy to'ldirish</b>
+                <h3>Email</h3>
+                <input type="email" id="v3"> <img src="https://pluspng.com/img-png/green-tick-png-hd-green-check-marks-clipart-library-7855.png" id="p3" width="25"> <img src="https://avatanplus.com/files/resources/original/5ce1ea638f5be16ad27b9503.png" id="p8" width="25"> <b id="b3">Majburiy to'ldirish</b>
+                <h3>Parol</h3>
+                <input type="password" id="v4"> <img src="https://pluspng.com/img-png/green-tick-png-hd-green-check-marks-clipart-library-7855.png" id="p4" width="25"> <img src="https://avatanplus.com/files/resources/original/5ce1ea638f5be16ad27b9503.png" id="p9" width="25"> <b id="b4">Majburiy to'ldirish</b>
+                <h3>Takroriy Parol <i id="i">Parol bir biriga to'g'ri kelishi kerak</i></h3>
+                <input type="password" id="v5"> <img src="https://pluspng.com/img-png/green-tick-png-hd-green-check-marks-clipart-library-7855.png" id="p5" width="25"> <img src="https://avatanplus.com/files/resources/original/5ce1ea638f5be16ad27b9503.png" id="p10" width="25"> <b id="b5">Majburiy to'ldirish</b>
+                <div class="center knopka">
+                    <a onclick="fan()">Kirish</a>
+                    <input class="reset" type="reset" value="O'chirish">
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- -------------------------------------------------------------------------------------------------------- -->
+    <input type="text" id="t1" class="non">
+    <input type="text" id="t2" class="non">
+    <input type="email" id="t3" class="non">
+    <input type="password" id="t4" class="non">
+    <input type="password" id="t5" class="non">
+<!-- -------------------------------------------------------------------------------------------------------- -->
+    <div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 12s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 6s;"></div><div class="div"></div><div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 12s;"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 5s;"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 4s;"></div>
+    <div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div"></div><div class="div" style="animation-delay: 2s;"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 8s;"></div>
+    <div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div" style="animation-delay: 4s;"></div>
+    <div class="div" style="animation-delay: 2s;"></div><div class="div"></div><div class="div" style="animation-delay: 11s;"></div><div class="div" style="animation-delay: 5s;"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 4s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 10s;"></div>
+    <div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div"></div><div class="div" style="animation-delay: 3s;"></div>
+    <div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 8s;"></div><div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 9s;"></div>
+    <div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div"></div><div class="div" style="animation-delay: 7s;"></div>
+    <div class="div" style="animation-delay: 3s;"></div><div class="div"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 8s;"></div>
+    <div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div" style="animation-delay: 10s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 11s;"></div><div class="div"></div><div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 6s;"></div>
+    <div class="div"></div><div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 8s;"></div>
+    <div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 10s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 1s;"></div>
+    <div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 4s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 2s;"></div>
+    <div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 6s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 3s;"></div>
+    <div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 8s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 4s;"></div>
+    <div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 5s;"></div>
+    <div class="div" style="animation-delay: 11s;"></div><div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 10s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 12s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 6s;"></div>
+    <div class="div" style="animation-delay: 13s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 14s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 7s;"></div>
+    <div class="div" style="animation-delay: 15s;"></div><div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 6s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 8s;"></div>
+    <div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 4s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 12s;"></div><div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 9s;"></div>
+    <div class="div" style="animation-delay: 6s;"></div><div class="div" style="animation-delay: 10s;"></div><div class="div" style="animation-delay: 2s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 7s;"></div><div class="div" style="animation-delay: 9s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 10s;"></div>
+    <div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 8s;"></div><div class="div"></div>
+    <div class="div" style="animation-delay: 1s;"></div><div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 5s;"></div><div class="div" style="animation-delay: 1s;"></div>
+    <div class="div" style="animation-delay: 3s;"></div><div class="div" style="animation-delay: 5s;"></div>
+    <script>
+        function fan(){
+            let num1 = document.getElementById("v1").value;
+            let num2 = document.getElementById("v2").value;
+            let num3 = document.getElementById("v3").value;
+            let num4 = document.getElementById("v4").value;
+            let num5 = document.getElementById("v5").value;
+            let ten1 = document.getElementById("t1").value;
+            let ten2 = document.getElementById("t2").value;
+            let ten3 = document.getElementById("t3").value;
+            let ten4 = document.getElementById("t4").value;
+            let ten5 = document.getElementById("t5").value;
+            if(num1 == ten1){
+                document.getElementById("p6").style.display = "inline";
+                document.getElementById("p1").style.display = "none";
+                document.getElementById("b1").style.display = "inline";
+            }
+            else{
+                document.getElementById("p1").style.display = "inline";
+                document.getElementById("p6").style.display = "none";
+                document.getElementById("b1").style.display = "none";
+            }
+            if(num2 == ten2){
+                document.getElementById("p7").style.display = "inline";
+                document.getElementById("p2").style.display = "none";
+                document.getElementById("b2").style.display = "inline";
+            }
+            else{
+                document.getElementById("p2").style.display = "inline";
+                document.getElementById("p7").style.display = "none";
+                document.getElementById("b2").style.display = "none";
+            }
+            if(num3 == ten3){
+                document.getElementById("p8").style.display = "inline";
+                document.getElementById("p3").style.display = "none";
+                document.getElementById("b3").style.display = "inline";
+            }
+            else{
+                document.getElementById("p3").style.display = "inline";
+                document.getElementById("p8").style.display = "none";
+                document.getElementById("b3").style.display = "none";
+            }
+            if(num4 == ten4){
+                document.getElementById("p9").style.display = "inline";
+                document.getElementById("p4").style.display = "none";
+                document.getElementById("b4").style.display = "inline";
+            }
+            else{
+                document.getElementById("p4").style.display = "inline";
+                document.getElementById("p9").style.display = "none";
+                document.getElementById("b4").style.display = "none";
+            }
+            if(num5 == ten5){
+                document.getElementById("p10").style.display = "inline";
+                document.getElementById("p5").style.display = "none";
+                document.getElementById("b5").style.display = "inline";
+            }
+            else{
+                document.getElementById("p5").style.display = "inline";
+                document.getElementById("p10").style.display = "none";
+                document.getElementById("b5").style.display = "none";
+            }
+            // if(v4 == t4){
+            //     document.getElementById("i").style.display = "none";
+            //     document.getElementById("p9").style.display = "none";
+            // }
+            // else{
+            //     document.getElementById("p9").style.display = "inline";
+            //     document.getElementById("i").style.display = "inline";
+            // }
+            // if(v5 == t5){
+            //     document.getElementById("i").style.display = "none";
+            //     document.getElementById("p10").style.display = "none";
+            // }
+            // else{
+            //     document.getElementById("p10").style.display = "inline";
+            //     document.getElementById("i").style.display = "inline";
+            // }
+        }
+    </script>
+</body>
+</html>

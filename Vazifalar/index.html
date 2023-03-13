@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box,.box1,.box2,.box3,.box4,.box5{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            animation: anime 5s linear infinite;
+            position: relative;
+        }
+        @keyframes anime{
+            0%{
+                box-shadow: 0px 0px 10px grey,
+                            -0px -0px 10px grey;
+            }
+            10%{
+                box-shadow: 0px 0px 10px grey,
+                            -0px -0px 10px grey;
+            }
+            20%{
+                box-shadow: 0px 0px 10px grey,
+                            -0px -0px 10px grey;
+            }
+            30%{
+                box-shadow: 0px 0px 5px grey,
+                            -0px -0px 5px grey;
+            }
+            40%{
+                box-shadow: 0px 0px 3px grey,
+                            -0px -0px 3px grey;
+            }
+            50%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            60%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            70%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            80%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            85%{
+                box-shadow: 0px 0px 3px grey,
+                            -0px -0px 3px grey;
+            }
+            90%{
+                box-shadow: 0px 0px 5px grey,
+                            -0px -0px 5px grey;
+            }
+            100%{
+                box-shadow: 0px 0px 10px grey,
+                            -0px -0px 10px grey;
+            }
+        }
+        @keyframes anime1{
+            0%{
+                box-shadow: 2px 2px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            10%{
+                box-shadow: 3px 3px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            20%{
+                box-shadow: 2px 2px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            30%{
+                box-shadow: 1px 1px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            40%{
+                box-shadow: 0px 0px 2px grey,
+                            -0px -0px 2px grey;
+            }
+            50%{
+                box-shadow: 0px 0px 2px grey,
+                            -3px -3px 2px grey;
+            }
+            60%{
+                box-shadow: 0px 0px 0px grey,
+                            -2px -2px 0px grey;
+            }
+            70%{
+                box-shadow: 0px 0px 0px grey,
+                            -1px -1px 00px grey;
+            }
+            80%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            85%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            90%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+            100%{
+                box-shadow: 0px 0px 0px grey,
+                            -0px -0px 0px grey;
+            }
+        }
+        .pz{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="left: 10px;"></div>
+    <div class="box1" style="animation: anime 10s linear infinite; left: 30px;"></div>
+    <div class="box2" style="animation: anime1 5s linear infinite; left: 4px;"></div>
+    <div class="box3" style="left: 15px;"></div>
+    <div class="box4" style="animation: anime1 10s linear infinite; left: 5px;"></div>
+    <!-- *********************************************************************************** -->
+    <div class="box3 pz" style="left: 260px; top: 10px;"></div>
+    <div class="box4 pz" style="animation: anime1 10s linear infinite; top: 20px; left: 400px;"></div>
+    <div class="box2 pz" style="animation: anime1 5s linear infinite; top: 30px; left: 100px;"></div>
+    <div class="box1 pz" style="animation: anime 10s linear infinite; top: 40px; left: 350px;"></div>
+    <div class="box pz" style="left: 180px; top: 50px;"></div>
+    <!-- ************************************************************************************* -->
+    <div class="box1 pz" style="animation: anime 25s linear infinite; top: 100px; left: 350px;"></div>
+    <div class="box pz" style="left: 180px; top: 110px;"></div>
+    <div class="box2 pz" style="animation: anime1 32s linear infinite; top: 120px; left: 100px;"></div>
+    <div class="box4 pz" style="animation: anime1 35s linear infinite; top: 130px; left: 400px;"></div>
+    <div class="box3 pz" style="left: 260px; top: 140px;"></div>
+<!-- ****************************************************************************************** -->
+<div class="box3 pz" style="left: 260px; top: 240px;"></div>
+<div class="box4 pz" style="animation: anime1 6s linear infinite; top: 230px; left: 400px;"></div>
+<div class="box2 pz" style="animation: anime1 15s linear infinite; top: 220px; left: 100px;"></div>
+<div class="box pz" style="left: 180px; top: 210px;"></div>
+<div class="box1 pz" style="animation: anime 20s linear infinite; top: 200px; left: 350px;"></div>
+</body>
+</html>

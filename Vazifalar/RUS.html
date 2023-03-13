@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Загрузка...</title>
+  <style>
+   .loading {
+    width: 240px;
+    margin: auto;
+    padding: 20px 0 10px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+   }
+   .spin {
+    display: inline-block;
+    width: 30px; height: 30px;
+    border: 10px solid #ccc;
+    border-right: 10px solid transparent;
+    border-radius: 30px;
+    /* Анимация */
+    animation: spin 2s linear 0s infinite normal;
+   }
+   /* Задаём вращение */
+   @keyframes spin { from { transform: rotate(0deg); } 
+                     to { transform: rotate(360deg); } }
+  </style>
+ </head>
+ <body>
+  <div class="loading">
+   <div class="spin"></div>
+   <p>Загружается...</p>
+  </div>
+ </body>
+</html>
