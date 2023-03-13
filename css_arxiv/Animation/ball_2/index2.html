@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .ball{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #cc3f85;
+            border-radius: 100%;
+            animation: ball 3s linear infinite,
+                ball_left 25s linear infinite;
+        }
+        @keyframes ball{
+            0%{bottom: 100%;}
+            25%{
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+                background-color: #cc3f85;
+            }
+            30%{
+                bottom: 0;
+                height: 50px;
+                width: 110px;
+                background-color: red;
+            }
+            35%{
+                bottom: 0;
+                width: 100px;
+                height: 100px;
+            }
+            70%{
+                bottom: 100%;
+                background-color: #cc3f85;
+            }
+            100%{bottom: 100%;}
+        }
+        @keyframes ball_left{
+            from {left: 0;}
+            to{left: 100%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

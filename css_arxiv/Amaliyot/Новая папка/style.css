@@ -1,0 +1,56 @@
+p:first-child i{
+    color: blue;
+}
+.q::first-line{
+    color: purple;
+}
+
+.q::first-letter{
+    color: blue;
+    text-shadow: 2px 2px 1px red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.w::before{
+    content: url(sqpurple.gif);
+}
+
+.w::after{
+    content: url(sqpurple.gif);
+}
+
+li::marker{
+    color: purple;
+}
+
+::selection{
+    color: yellow;
+    background-color: purple;
+    outline: 3px blue;
+    text-shadow: 2px 2px 1px blue;
+}
+
+img{
+    opacity: 0.5;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+.l{
+    background-image: url(3HeL.gif);
+    border: 3px solid black;
+    padding: 20px;
+}
+
+.i{
+    background-color: rgb(128, 0, 128,0.3);
+    border: 3px solid black;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    
+}
+

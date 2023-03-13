@@ -1,0 +1,1804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashq</title>
+    <link rel="stylesheet" href="D:\Mashq_1v\font-awesome-4.7.0\css\font-awesome.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .sideBar{
+            width: 10%;
+            border: 2px solid grey;
+            float: left;
+            overflow: scroll;
+            height: 100vh;
+            background: linear-gradient(to right, #7bc5ea, #82b6ed);
+
+        }
+        body{ 
+            height: 200px;
+            background: linear-gradient(to right, #f5e2c4 20%, #e9dfb6 20%, #f5e5ba 80%, #f5e2c4 80%);
+        }
+        ol li{
+            padding: 6px 0;
+        }
+        ol li a{
+            text-decoration: none;
+            padding: 5px;
+            color: black;
+            font-weight: bold;
+            transition: color 1s, border 0.2s;
+            font-size: 20px;
+        }
+        a:hover{
+            color: blue;
+            transition: color 1s, border 0.2s;
+        }
+        h2{
+            text-align: center;
+        }
+        .content{
+            width: 90%;
+            float: left;
+        }
+        .nan{
+            display: none;
+        }
+        .anime{
+            animation: fan 1s linear forwards;
+        }
+        img{
+            width: 100%;
+            display: none;
+            animation: fan 1s linear forwards;
+        }
+        @keyframes fan{
+            0%{
+                transform: scale(0);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+        .gradient-text {
+            font-family: 'Rubik One', sans-serif;
+            font-size: 20px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #26429f 33%, #1e7987 66%, #16485b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: #0B2349;
+            display: table;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sideBar">
+        <h2 class="gradient-text"><i class="fa fa-university" aria-hidden="true"></i>  Asosiy HTML</h2>
+        <ol>
+            <li><a href="#" id="btn_1" onclick="fan1()">Vazifa 1</a></li>
+            <li><a href="#" id="btn_2" onclick="fan2()">Vazifa 2</a></li>
+            <li><a href="#" id="btn_3" onclick="fan3()">Vazifa 3</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-text-width" aria-hidden="true"></i>  Formatlash</h2>
+        <ol>
+            <li><a href="#" id="btn_4" onclick="fan4()">Vazifa 4</a></li>
+            <li><a href="#" id="btn_5" onclick="fan5()">Vazifa 5</a></li>
+            <li><a href="#" id="btn_6" onclick="fan6()">Vazifa 6</a></li>
+            <li><a href="#" id="btn_7" onclick="fan7()">Vazifa 7</a></li>
+            <li><a href="#" id="btn_8" onclick="fan8()">Vazifa 8</a></li>
+            <li><a href="#" id="btn_8_1" onclick="fan8_1()">Vazifa 8.1</a></li>
+            <li><a href="#" id="btn_8_2" onclick="fan8_2()">Vazifa 8.2</a></li>
+            <li><a href="#" id="btn_9" onclick="fan9()">Vazifa 9</a></li>
+            <li><a href="#" id="btn_10" onclick="fan10()">Vazifa 10</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-play" aria-hidden="true"></i>  Havolalar</h2>
+        <ol>
+            <li><a href="#" id="btn_11" onclick="fan11()">Vazifa 11</a></li>
+            <li><a href="#" id="btn_12" onclick="fan12()">Vazifa 12</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-picture-o" aria-hidden="true"></i>  Rasm,Tasvirlar</h2>
+        <ol>
+            <li><a href="#" id="btn_13" onclick="fan13()">Vazifa 13</a></li>
+            <li><a href="#" id="btn_14" onclick="fan14()">Vazifa 14</a></li>
+            <li><a href="#" id="btn_15" onclick="fan15()">Vazifa 15</a></li>
+            <li><a href="#" id="btn_16" onclick="fan16()">Vazifa 16</a></li>
+            <li><a href="#" id="btn_17" onclick="fan17()">Vazifa 17</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-commenting" aria-hidden="true"></i>  Ro'yxatlar</h2>
+        <ol>
+            <li><a href="#" id="btn_18" onclick="fan18()">Vazifa 18</a></li>
+            <li><a href="#" id="btn_19" onclick="fan19()">Vazifa 19</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-sign-out" aria-hidden="true"></i>  Shakllar va kiritish</h2>
+        <ol>
+            <li><a href="#" id="btn_20" onclick="fan20()">Vazifa 20</a></li>
+            <li><a href="#" id="btn_21" onclick="fan21()">Vazifa 21</a></li>
+            <li><a href="#" id="btn_22" onclick="fan22()">Vazifa 22</a></li>
+            <li><a href="#" id="btn_23" onclick="fan23()">Vazifa 23</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-mobile" aria-hidden="true"></i>  Ramkalar</h2>
+        <ol>
+            <li><a href="#" id="btn_24" onclick="fan24()">Vazifa 24</a></li>
+        </ol><hr>
+        <h2 class="gradient-text"><i class="fa fa-youtube-play" aria-hidden="true"></i>  Audio va Video</h2>
+        <ol>
+            <li><a href="#" id="btn_25" onclick="fan25()">Vazifa 25</a></li>
+            <li><a href="#" id="btn_26" onclick="fan26()">Vazifa 26</a></li>
+        </ol>
+    </div>
+<!-- ************************************************************************************* -->
+    <div class="content">
+        <img src="Asosiy_1.png" alt="Vazifa_1" id="v1">
+        <img src="Asosiy_2.png" alt="Vazifa_2" id="v2">
+        <img src="Asosiy_3.png" alt="Vazifa_3" id="v3">
+<!-- ************************************************************************************* -->
+        <img src="Formatlash_4.png" alt="Vazifa_4" id="v4">
+        <img src="Formatlash_5.png" alt="Vazifa_5" id="v5">
+        <img src="Formatlash_6.png" alt="Vazifa_6" id="v6">
+        <img src="Formatlash_7.png" alt="Vazifa_7" id="v7">
+        <img src="Formatlash_8.png" alt="Vazifa_8" id="v8">
+        <img src="Formatlash_8_1.png" alt="Vazifa_8_1" id="v8_1">
+        <img src="Formatlash_8_2.png" alt="Vazifa_8_2" id="v8_2">
+        <img src="Formatlash_9.png" alt="Vazifa_9" id="v9">
+        <video class="nan anime" id="v10" autoplay muted loop src="Formatlash_10.mp4"></video>
+<!-- ************************************************************************************* -->
+        <img src="Havola_11.png" alt="Vazifa_11" id="v11">
+        <video class="nan anime" id="v12" autoplay muted loop src="Havola_12.mp4" controls></video>
+<!-- ************************************************************************************* -->
+        <img src="Rasm_13.png" alt="Vazifa_13" id="v13">
+        <img src="Rasm_14.png" alt="Vazifa_14" id="v14">
+        <video class="nan anime" id="v15" autoplay muted loop src="Rasm_15.mp4" controls></video>
+        <video class="nan anime" id="v16" autoplay muted loop src="Rasm_16.mp4" controls></video>
+        <video class="nan anime" id="v17" autoplay muted loop src="Rasm_17.mp4" controls></video>
+<!-- ************************************************************************************* -->
+        <img src="Ruyxat_18.png" alt="Vazifa_18" id="v18">
+        <img src="Ruyxat_19.png" alt="Vazifa_19" id="v19">
+<!-- ************************************************************************************* -->
+        <img src="form_20.png" alt="Vazifa_20" id="v20">
+        <img src="form_21.png" alt="Vazifa_21" id="v21">
+        <video class="nan anime" id="v22" autoplay muted loop src="Form_22.mp4" controls></video>
+        <video class="nan anime" id="v23" autoplay muted loop src="Form_23.mp4" controls></video>
+<!-- ************************************************************************************* -->
+        <img src="Ramka_24.png" alt="Vazifa_24" id="v24">
+<!-- ************************************************************************************* -->
+        <video class="nan anime" id="v25" autoplay muted loop src="Video_25.mp4" controls></video>
+        <video class="nan anime" id="v26" autoplay muted loop src="Video_26.mp4" controls></video>
+<!-- ************************************************************************************* -->
+    </div>
+    <script>
+        function fan1(){
+            document.getElementById("btn_1").style.borderBottom = " 2px solid rgb(11, 75, 69)";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "block";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan2(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "block";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan3(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "block";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan4(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "block";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan5(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "block";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan6(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "block";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan7(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "block";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan8(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "block";
+            document.getElementById("v8.1").style.display = "none";
+            document.getElementById("v8.2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan8_1(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "block";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan8_2(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "block";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan9(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "block";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan10(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "block";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan11(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "block";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan12(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "block";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan13(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "block";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan14(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "block";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan15(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "block";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan16(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "block";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan17(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "block";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan18(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "block";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan19(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "block";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan20(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "block";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan21(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "block";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan22(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "block";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan23(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "block";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan24(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "block";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan25(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 2px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 0px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "block";
+            document.getElementById("v26").style.display = "none";
+        }
+        function fan26(){
+            document.getElementById("btn_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_3").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_4").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_5").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_6").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_7").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_1").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_8_2").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_9").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_10").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_11").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_12").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_13").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_14").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_15").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_16").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_17").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_18").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_19").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_20").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_21").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_22").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_23").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_24").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_25").style.borderBottom = " 0px solid blue";
+            document.getElementById("btn_26").style.borderBottom = " 2px solid blue";
+            document.getElementById("v1").style.display = "none";
+            document.getElementById("v2").style.display = "none";
+            document.getElementById("v3").style.display = "none";
+            document.getElementById("v4").style.display = "none";
+            document.getElementById("v5").style.display = "none";
+            document.getElementById("v6").style.display = "none";
+            document.getElementById("v7").style.display = "none";
+            document.getElementById("v8").style.display = "none";
+            document.getElementById("v8_1").style.display = "none";
+            document.getElementById("v8_2").style.display = "none";
+            document.getElementById("v9").style.display = "none";
+            document.getElementById("v10").style.display = "none";
+            document.getElementById("v11").style.display = "none";
+            document.getElementById("v12").style.display = "none";
+            document.getElementById("v13").style.display = "none";
+            document.getElementById("v14").style.display = "none";
+            document.getElementById("v15").style.display = "none";
+            document.getElementById("v16").style.display = "none";
+            document.getElementById("v17").style.display = "none";
+            document.getElementById("v18").style.display = "none";
+            document.getElementById("v19").style.display = "none";
+            document.getElementById("v20").style.display = "none";
+            document.getElementById("v21").style.display = "none";
+            document.getElementById("v22").style.display = "none";
+            document.getElementById("v23").style.display = "none";
+            document.getElementById("v24").style.display = "none";
+            document.getElementById("v25").style.display = "none";
+            document.getElementById("v26").style.display = "block";
+        }
+    </script>
+</body>
+</html>

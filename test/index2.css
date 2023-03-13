@@ -1,0 +1,13 @@
+p:first-child{
+    color: green;
+    font-weight: bold;
+}
+
+div{
+    border: 3px solid black;
+}
+
+
+div i:first-child{
+    color: red;
+}

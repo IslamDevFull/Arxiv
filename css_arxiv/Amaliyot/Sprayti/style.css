@@ -1,0 +1,64 @@
+
+/* 1 */
+ul{
+    position: relative;
+}
+
+ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+ul li, ul li a{
+    height: 44px;
+    display: block;
+}
+
+.home{
+    left: 0px;
+    width: 46px;
+    background: url(img_navsprites_hover.gif) 0 0;
+}
+
+.next{
+    left: 63px;
+    width: 43px;
+    background: url(img_navsprites_hover.gif) -47px 0;  
+}
+
+.next2{
+    left: 129px;
+    width: 43px;
+    background: url(img_navsprites_hover.gif) -91px 0;
+}
+
+
+.home a:hover{
+    background: url(img_navsprites_hover.gif) 0 -45px;
+}
+.next a:hover{
+    background: url(img_navsprites_hover.gif) -47px -45px;
+}
+.next2 a:hover{
+    background: url(img_navsprites_hover.gif) -91px -45px;
+}
+
+/* 2 */
+.div{
+    position: relative;
+    top: 100px;
+    width: 126px;
+    height: 124px;
+    background: url(workplace.jpg) 147px 170px;
+    background-size: 550px;
+    clip-path: circle(50%);
+}
+
+.div:hover{
+    background: url(workplace.jpg) 147px 170px;
+    background-size: 550px;
+    clip-path: circle(60%);
+}

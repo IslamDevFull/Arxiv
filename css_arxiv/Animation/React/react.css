@@ -1,0 +1,97 @@
+*{
+    margin: 0; /* Maksimal darajada tepaga Joylashtiradi */
+    padding: 0; /* Maksimal darajada chap tomonga Joylashtiradi */
+    box-sizing: border-box;
+}
+
+body{
+    display: flex; /* Kubiklarni chetdan Ketma Ket Chiqoradi */
+    justify-content: center; /* Contentni Chapdan O'rtaga Joylashtiradi */
+    align-items: center; /* Contentni Tepadan O'rtaga Joylashtiradi */
+    min-height: 100vh;
+    background: black; /* Orqa Fonga Rang Beradi */
+}
+
+.react{
+    position: relative; /* Kubikni Ikkiga Bo'ladi */
+    width: 600px; /* Kubikni Enini Belgilaydi */
+    height: 600px; /* Kubikni Uzunligini Belgilaydi */
+    filter: url() blur(1px);
+}
+
+.react:before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    border: 20px solid #fff; /* Kubiklarni Chegarasini Rangini Beradi */
+    border-radius: 50%; /* Kubiklarni Aylana Shaklida Qiladi */
+    box-shadow: 0 0 50px #0f0, /* Tashqi Qismiga Soya Berish */
+          inset 0 0 50px #0f0; /* Ichki Qismiga Soya Berish */
+    -webkit-box-reflect: below /*Quyidagi Ko'rinishda Pastga Kopiya Qilish*/ 10px /*10px pastroq tushurish*/ linear-gradient(transparent,transparent,#0002); /* prozrachniy qilish */
+    animation: animate 5s linear infinite;
+}
+
+.react:after{
+    content: '';
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    bottom: 100px;
+    border: 20px solid #fff; /* Kubiklarni Chegarasini Rangini Beradi */
+    border-radius: 50%; /* Kubiklarni Aylana Shaklida Qiladi */
+    box-shadow: 0 0 10px #fff, /* Tashqi Qismiga Soya Berish */
+          inset 0 0 20px #fff; /* Ichki Qismiga Soya Berish */
+}
+
+.react:nth-child(2):before{
+    animation-delay: -2.5s; /* 2 ta aylanani rangini xarxel qiladi */
+}
+
+
+/* Animatsiya Qo'shadi */
+@keyframes animate{
+    0%{
+        box-shadow: 0 0 50px #0f0, /* Aylanani ichkari tamonini chegarasiga animatsiya Qo'shadi */
+        inset 0 0 50px #0f0; /* Aylanani Tashqari tamonini chegarasiga animatsiya Qo'shadi */
+        filter: hue-rotate(0deg);
+    }
+    20%{
+        box-shadow: 0 0 60px #0f0, /* Aylanani ichkari tamonini chegarasiga animatsiya Qo'shadi */
+        inset 0 0 60px #0f0; /* Aylanani Tashqari tamonini chegarasiga animatsiya Qo'shadi */
+    }
+    40%{
+        box-shadow: 0 0 40px #0f0,
+        inset 0 0 40px #0f0 ;
+    }
+    60%{
+        box-shadow: 0 0 80px #0f0,
+        inset 0 0 80px #0f0;
+    }
+    80%{
+        box-shadow: 0 0 100px #0f0,
+        inset 0 0 100px #0f0;
+    }
+    100%{
+        box-shadow: 0 0 50px #0f0,
+        inset 0 0 50px #0f0;
+        filter: hue-rotate(360deg);
+    }
+
+}
+
+svg{
+    width: 0;
+    height: 0;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 1000px;
+}
+
+ul{
+    list-style-type: none;
+    background-color: #333;
+    width: 200px;
+    height: 660px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+ul li a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 20px;
+    text-transform: capitalize;
+    border-radius: 50px 0px;
+}
+
+ul li a:hover{
+    background-image: url(3HeL.gif);
+    background-size: 100px;
+    text-shadow: 2px 2px 2px green;
+}
+
+ul li a:focus{
+    background-image: url(3HeL.gif);
+    background-size: 100px;
+}
+
+.content{
+    position: absolute;
+    top: 0;
+    left: 205px;
+    line-height: 50px;
+}

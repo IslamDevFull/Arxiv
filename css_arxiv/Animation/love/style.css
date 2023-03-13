@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+.container{
+    position: relative;
+    width: 240px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container span{
+    width: 10px;
+    height: 20px;
+    margin: 0 1px;
+    border-radius: 50px;
+    background-color: rgb(182,12,12);
+}
+.container p{
+    position: absolute;
+    bottom: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: rgb(182,12,12);
+}
+
+.container i{
+    font-size: 20px;
+}
+.container span:nth-child(1){animation: anim1 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(2){animation: anim2 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(3){animation: anim3 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(4){animation: anim4 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(5){animation: anim5 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(6){animation: anim6 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(7){animation: anim7 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(8){animation: anim8 1.8s ease-in-out infinite alternate;}
+.container span:nth-child(9){animation: anim9 1.8s ease-in-out infinite alternate;}
+
+@keyframes anim1{
+    0%{height: 18px;}
+    100%{height: 30px;}
+}
+
+@keyframes anim2{
+    0%{height: 18px;}
+    100%{height: 50px;}
+}
+
+@keyframes anim3{
+    0%{height: 18px;}
+    100%{height: 66px;}
+}
+
+@keyframes anim4{
+    0%{height: 18px;}
+    100%{
+    transform: translateY(10px);
+    height: 72px;
+    }
+}
+
+@keyframes anim5{
+    0%{height: 18px;}
+    100%{
+        transform: translateY(18px);
+        height: 74px;}
+}
+
+@keyframes anim6{
+    0%{height: 18px;}
+    100%{
+        transform: translateY(10px);
+        height: 72px;
+    }
+}
+
+@keyframes anim7{
+    0%{height: 18px;}
+    100%{height: 70px;}
+}
+
+@keyframes anim8{
+    0%{height: 18px;}
+    100%{height: 50px;}
+}
+
+@keyframes anim9{
+    0%{height: 18px;}
+    100%{height: 30px;}
+}

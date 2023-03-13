@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        @keyframes anime {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body id="s" style="background: black;">
+    
+    <h1 style="color:green">Nima Qilib Biladi <span style="color: yellow;"> JavaScript</span></h1>
+    <p id="js" style="color: white;">Bu Yangi Qator</p>
+
+    <button onclick="document.getElementById('js').innerHTML = 'Men JavaScriptni O`rganayapman'">Matn</button>
+    <button onclick="document.getElementById('js').style.fontSize = '40px'">Size</button>
+    <button onclick="document.getElementById('js').style.animation = 'anime 1s infinite'">Animation</button>
+    <br>
+    <h2 style="color:green">Color</h2>
+    <button onclick="document.getElementById('js').style.color = 'red'">Red</button>
+    <button onclick="document.getElementById('js').style.color = 'yellow'">Yellow</button>
+    <button onclick="document.getElementById('js').style.color = 'blue'">Blue</button>
+    <button onclick="document.getElementById('js').style.color = 'green'">Green</button>
+    <br>
+    <h2 style="color:green">Fon</h2>
+    <button onclick="document.getElementById('s').style.backgroundColor = 'powderblue'">Blue</button>
+    <button onclick="document.getElementById('s').style.backgroundColor = 'green'">green</button>
+    <button onclick="document.getElementById('s').style.backgroundColor = 'black'">black</button>
+    <button onclick="document.getElementById('s').style.backgroundColor = 'white'">white</button>
+    <br><br>
+    <button onclick="document.getElementById('foto').style.display = 'inline'">Rasm</button>
+    <br><br>
+    <div id="foto" style="display: none;">
+    <button onclick="document.getElementById('rasm'). src='pic_bulbon.gif'">on</button>
+    <img id="rasm" src="pic_bulboff.gif"> 
+    <button onclick="document.getElementById('rasm'). src='pic_bulboff.gif'">off</button>
+    </div>
+    <!--JavaScript registeri sezgir-->
+
+</body>
+</html>

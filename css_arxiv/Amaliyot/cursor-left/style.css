@@ -1,0 +1,70 @@
+body{
+    height: 1500px;
+}
+
+
+/* 1 */
+h1{
+    cursor: no-drop;
+}
+
+/* 2 */
+ul{
+    border: 3px solid red;
+    list-style: url("sqpurple.gif");
+}
+
+ul li{
+    border: 3px solid black;
+    padding: 20px;
+    display: block;
+}
+
+/* 3 */
+table,th,td{
+    border: 3px solid black;
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    caption-side: top;
+    empty-cells: hide;
+    table-layout: fixed;
+    visibility: visible;
+    display: none;
+}/*
+
+th{
+    background-color: powderblue;
+    color: black;
+    font-size: 25px;
+    height: 80px;
+}
+
+td{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+table th:hover{
+    background-color: cornsilk;
+}
+
+table td:hover{
+    background-color: darkgrey;
+}
+
+table tr:nth-child(even){
+    background-color: darkgray;
+}*/
+
+/* 4 *//*
+img{
+    position: sticky;
+    bottom: 0px;
+    top: 0;
+}*/

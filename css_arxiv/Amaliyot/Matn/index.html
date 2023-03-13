@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matn</title>
+    <style>
+        /* ////////// 1 ////////// */
+        .p{
+            border: 2px solid black;
+            width: 30%;
+            white-space: nowrap;
+            padding: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        /* ////////// 1 ////////// */
+        .p1{
+            border: 2px solid black;
+            width: 30%;
+            white-space: nowrap;
+            padding: 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .p1:hover{
+           /* white-space: pre-wrap; */
+           overflow: scroll;
+           text-overflow: clip;
+          /* width: 100%; */
+        }
+        /* ////////// 2 ////////// */
+        .p2{
+            border: 2px solid black;
+            width: 11em;
+            word-wrap: break-word;
+        }
+        /* ////////// 3 ////////// */
+        .p3{
+            border: 2px solid black;
+            width: 11em;
+            word-break: break-all;
+        }
+        /* ////////// 4 ////////// */
+        .p4{
+            border: 2px solid black;
+            width: 11em;
+            height: 300px;
+            writing-mode: vertical-rl;
+            
+        }
+
+        span{
+            writing-mode: vertical-rl;
+        }
+
+        /* ////////// 5 ////////// */
+        .p6{
+            border: 2px solid black;
+            width: 12em;
+            height: 200px;
+            text-align-last: center;                        
+        }
+
+    </style>
+</head>
+<body>
+    <!-- ////////// 1 ////////// -->
+    <p class="p">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimus harum ab veniam soluta, 
+        veritatis aut accusamus alias ex! Repudiandae omnis architecto 
+        cumque excepturi consectetur modi dolorem non sunt, molestiae assumenda!
+    </p>
+    <!-- ////////// 1 ////////// -->
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimus harum ab veniam soluta, 
+        veritatis aut accusamus alias ex! Repudiandae omnis architecto 
+        cumque excepturi consectetur modi dolorem non sunt, molestiae assumenda!
+    </p>
+    <!-- ////////// 2 ////////// -->
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimusharumabveniamsoluta, 
+        veritatis aut accusamus alias ex! Repudiandae omnis architecto 
+        cumqueexcepturiconsecteturmodidoloremnonsunt, molestiae assumenda!
+    </p>
+    <!-- ////////// 3 ////////// -->
+    <p class="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimusharumabveniamsoluta, 
+        veritatis aut accusamus alias ex! Repudiandae omnis architecto 
+        cumqueexcepturiconsecteturmodidoloremnonsunt, molestiae assumenda!
+    </p>
+    <!-- ////////// 4 ////////// -->
+    <p class="p4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Ducimus harum ab veniam soluta, 
+        veritatis aut accusamus alias ex! Repudiandae omnis architecto 
+        cumque excepturi consectetur modi dolorem non sunt, molestiae assumenda!
+    </p>
+    <p class="p5">
+        Lorem ipsum dolor sit amet <span>adipisicing</span> elit. 
+        Ducimus harum ab veniam soluta, 
+        veritatis aut accusamus alias ex! <span>omnis</span> architecto 
+        cumque excepturi <span>consectetur </span>modi dolorem non sunt, molestiae assumenda!
+    </p>
+
+    <p class="p6">
+        Lorem ipsum dolor sit amet adipisicing elit. 
+        Ducimus harum ab veniam soluta, 
+        veritatis aut accusamus alias ex! omnis architecto 
+        cumque excepturi consectetur modi dolorem non sunt, molestiae assumenda!
+    </p>
+</body>
+</html>

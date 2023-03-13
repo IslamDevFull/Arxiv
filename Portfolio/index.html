@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasturlash</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        #demo{
+            text-align: center;
+            line-height: 800px;
+            color: wheat;
+            font-size: 60px;
+        }
+        .ani{
+            color: greenyellow;
+            position: absolute;
+            top: -80px;
+            opacity: 0.5;
+        }
+        .aniStop{
+            animation: anime 5s linear infinite;
+        }
+        @keyframes anime{
+            0%{
+                top: -50px;
+            }
+            100%{
+                top: 880px;
+            }
+        }
+        .container{
+            /* border-top: 2px solid red; */
+            width: 25%;
+            height: 130px;
+            position: absolute;
+            top: 550px;
+            left: 700px;
+            color: wheat;
+            font-size: 30px;
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.5);
+            animation: shado 3s linear forwards;
+            transition: all 2s ease-in-out;
+        }
+        .container:hover{
+            background-color: rgba(51, 51, 51);
+        }
+        @keyframes shado{
+            0%{
+                box-shadow: 0px 0px 20px -50px greenyellow;
+            }
+            100%{
+                box-shadow: 0px 0px 20px 1px greenyellow;
+            }
+        }
+        .col_1{
+            width: 50%;
+            float: left;
+            padding: 10px;
+            /* border-radius: 0px 0px 0px 20px; */
+        }
+        .col_2{
+            width: 50%;
+            float: left;
+            padding: 10px;
+            /* border-radius: 0px 20px 0px 0px; */
+            border-left: 1px solid greenyellow;
+        }
+        button{
+            font-size: 20px;
+            margin-top: 30px;
+            background-color: #333;
+            border: outset;
+            border-radius: 10px 0;
+            color: greenyellow;
+            padding: 5px 20px;
+        }
+        button:active{
+            border: inset;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="ani" style="left: 10px;animation-delay: 30s;opacity: 1;">1</h1><h1 class="ani" style="left: 40px;animation-delay: 4s;">0</h1>
+    <h1 class="ani" style="left: 80px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 100px;animation-delay: 29s;">0</h1>
+    <h1 class="ani" style="left: 120px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 140px;animation-delay: 31s;opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 160px;animation-delay: 21s;">1</h1><h1 class="ani" style="left: 180px;animation-delay: 41s;">0</h1>
+    <h1 class="ani" style="left: 200px;animation-delay: 31s;">1</h1><h1 class="ani" style="left: 220px;animation-delay: 7s;">0</h1>
+    <h1 class="ani" style="left: 240px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 260px;animation-delay: 21s;">0</h1>
+    <h1 class="ani" style="left: 280px;animation-delay: 35s;">1</h1><h1 class="ani" style="left: 300px;animation-delay: 30s; opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 320px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 340px;animation-delay: 21s;">0</h1>
+    <h1 class="ani" style="left: 360px;animation-delay: 29s;">1</h1><h1 class="ani" style="left: 380px;animation-delay: 51s;">0</h1>
+    <h1 class="ani" style="left: 400px;animation-delay: 21s;">1</h1><h1 class="ani" style="left: 420px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 440px;animation-delay: 41s; opacity: 1;">1</h1><h1 class="ani" style="left: 460px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 480px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 500px;animation-delay: 7s;">0</h1>
+    <h1 class="ani" style="left: 520px;animation-delay: 45s;">1</h1><h1 class="ani" style="left: 540px;animation-delay: 51s;">0</h1>
+    <h1 class="ani" style="left: 560px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 580px;animation-delay: 4s;">0</h1>
+    <h1 class="ani" style="left: 600px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 620px;animation-delay: 29s;opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 640px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 660px;animation-delay: 31s;">0</h1>
+    <h1 class="ani" style="left: 680px;animation-delay: 21s;">1</h1><h1 class="ani" style="left: 700px;animation-delay: 41s;">0</h1>
+    <h1 class="ani" style="left: 720px;animation-delay: 31s;">1</h1><h1 class="ani" style="left: 740px;animation-delay: 7s;">0</h1>
+    <h1 class="ani" style="left: 760px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 780px;animation-delay: 21s; opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 800px;animation-delay: 35s;">1</h1><h1 class="ani" style="left: 820px;animation-delay: 30s;">0</h1>
+    <h1 class="ani" style="left: 840px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 860px;animation-delay: 21s; opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 880px;animation-delay: 29s;">1</h1><h1 class="ani" style="left: 900px;animation-delay: 11s;">0</h1>
+    <h1 class="ani" style="left: 920px;animation-delay: 21s;">1</h1><h1 class="ani" style="left: 940px;animation-delay: 45s; opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 960px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 980px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 1000px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 1020px;animation-delay: 7s; opacity: 1;">0</h1>
+    <h1 class="ani" style="left: 1040px;animation-delay: 45s;">1</h1><h1 class="ani" style="left: 1060px;animation-delay: 51s;">0</h1>
+    <h1 class="ani" style="left: 1080px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 1100px;animation-delay: 4s;">0</h1>
+    <h1 class="ani" style="left: 1120px;animation-delay: 41s; opacity: 1;">1</h1><h1 class="ani" style="left: 1140px;animation-delay: 29s;">0</h1>
+    <h1 class="ani" style="left: 1160px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 1180px;animation-delay: 31s;">0</h1>
+    <h1 class="ani" style="left: 1200px;animation-delay: 41s; opacity: 1;">1</h1><h1 class="ani" style="left: 1220px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 1240px;animation-delay: 31s;">1</h1><h1 class="ani" style="left: 1260px;animation-delay: 7s;">0</h1>
+    <h1 class="ani" style="left: 1280px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 1300px;animation-delay: 21s;">0</h1>
+    <h1 class="ani" style="left: 1320px;animation-delay: 35s;">1</h1><h1 class="ani" style="left: 1340px;animation-delay: 30s;">0</h1>
+    <h1 class="ani" style="left: 1360px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 1380px;animation-delay: 30s;">0</h1>
+    <h1 class="ani" style="left: 1400px;animation-delay: 29s;">1</h1><h1 class="ani" style="left: 1420px;animation-delay: 11s;">0</h1>
+    <h1 class="ani" style="left: 1440px;animation-delay: 21s;">1</h1><h1 class="ani" style="left: 1460px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 1480px;animation-delay: 41s; opacity: 1;">1</h1><h1 class="ani" style="left: 1500px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 1520px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 1540px;animation-delay: 7s;">0</h1>
+    <h1 class="ani" style="left: 1560px;animation-delay: 45s;">1</h1><h1 class="ani" style="left: 1580px;animation-delay: 21s;">0</h1>
+    <h1 class="ani" style="left: 1600px;animation-delay: 30s;">1</h1><h1 class="ani" style="left: 1620px;animation-delay: 4s;">0</h1>
+    <h1 class="ani" style="left: 1640px;animation-delay: 41s;">1</h1><h1 class="ani" style="left: 1660px;animation-delay: 29s;">0</h1>
+    <h1 class="ani" style="left: 1680px;animation-delay: 52s;">1</h1><h1 class="ani" style="left: 1700px;animation-delay: 47s;">0</h1>
+    <h1 class="ani" style="left: 1720px;animation-delay: 43s;">1</h1><h1 class="ani" style="left: 1740px;animation-delay: 45s;">0</h1>
+    <h1 class="ani" style="left: 1760px;animation-delay: 4s;">1</h1><h1 class="ani" style="left: 1780px;animation-delay: 41s;">0</h1>
+    <h1 class="ani" style="left: 1800px;animation-delay: 45s;">1</h1><h1 class="ani" style="left: 1820px;animation-delay: 30s;">0</h1>
+    <h1 class="ani" style="left: 1840px;animation-delay: 21s;opacity: 1;">1</h1><h1 class="ani" style="left: 1860px;animation-delay: 38s;">0</h1>
+    <h1 class="ani" style="left: 1880px;animation-delay: 51s;">1</h1><h1 class="ani" style="left: 10px;animation-delay: 29s;">1</h1>
+    <h1 class="ani" style="left: 40px;animation-delay: 45s;">0</h1><h1 class="ani" style="left: 80px;animation-delay: 30s;">1</h1>
+    <h1 class="ani" style="left: 100px;animation-delay: 43s;">0</h1><h1 class="ani" style="left: 120px;animation-delay: 41s;">1</h1>
+    <h1 class="ani" style="left: 140px;animation-delay: 21s;">0</h1><h1 class="ani" style="left: 160px;animation-delay: 35s;">1</h1>
+    <h1 class="ani" style="left: 180px;animation-delay: 30s;">0</h1><h1 class="ani" style="left: 200px;animation-delay: 29s;">1</h1>
+    <h1 class="ani" style="left: 220px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 240px;animation-delay: 49s;">1</h1>
+    <h1 class="ani" style="left: 260px;animation-delay: 38s;">0</h1><h1 class="ani" style="left: 280px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 300px;animation-delay: 46s;">0</h1><h1 class="ani" style="left: 320px;animation-delay: 31s;">1</h1>
+    <h1 class="ani" style="left: 340px;animation-delay: 15s; opacity: 1;">0</h1><h1 class="ani" style="left: 360px;animation-delay: 12s;">1</h1>
+    <h1 class="ani" style="left: 380px;animation-delay: 30s;">0</h1><h1 class="ani" style="left: 400px;animation-delay: 52s;">1</h1>
+    <h1 class="ani" style="left: 420px;animation-delay: 13s;">0</h1><h1 class="ani" style="left: 440px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 460px;animation-delay: 45s;">0</h1><h1 class="ani" style="left: 480px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 500px;animation-delay: 12s;">0</h1><h1 class="ani" style="left: 520px;animation-delay: 46s;">1</h1>
+    <h1 class="ani" style="left: 540px;animation-delay: 13s;">0</h1><h1 class="ani" style="left: 560px;animation-delay: 35s;">1</h1>
+    <h1 class="ani" style="left: 580px;animation-delay: 7s;">0</h1><h1 class="ani" style="left: 600px;animation-delay: 47s;">1</h1>
+    <h1 class="ani" style="left: 620px;animation-delay: 21s; opacity: 1;">0</h1><h1 class="ani" style="left: 640px;animation-delay: 46s;">1</h1>
+    <h1 class="ani" style="left: 660px;animation-delay: 59s;">0</h1><h1 class="ani" style="left: 680px;animation-delay: 4s;">1</h1>
+    <h1 class="ani" style="left: 700px;animation-delay: 35s;">0</h1><h1 class="ani" style="left: 720px;animation-delay: 52s;">1</h1>
+    <h1 class="ani" style="left: 740px;animation-delay: 29s;">0</h1><h1 class="ani" style="left: 760px;animation-delay: 43s;">1</h1>
+    <h1 class="ani" style="left: 780px;animation-delay: 35s;">0</h1><h1 class="ani" style="left: 800px;animation-delay: 30s;">1</h1>
+    <h1 class="ani" style="left: 820px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 840px;animation-delay: 13s; opacity: 1;">1</h1>
+    <h1 class="ani" style="left: 860px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 880px;animation-delay: 31s;">1</h1>
+    <h1 class="ani" style="left: 900px;animation-delay: 46s;">0</h1><h1 class="ani" style="left: 920px;animation-delay: 4s;">1</h1>
+    <h1 class="ani" style="left: 940px;animation-delay: 35s;">0</h1><h1 class="ani" style="left: 960px;animation-delay: 15s;">1</h1>
+    <h1 class="ani" style="left: 980px;animation-delay: 3s;">0</h1><h1 class="ani" style="left: 1000px;animation-delay: 52s;">1</h1>
+    <h1 class="ani" style="left: 1020px;animation-delay: 38s;">0</h1><h1 class="ani" style="left: 1040px;animation-delay: 52s;">1</h1>
+    <h1 class="ani" style="left: 1060px;animation-delay: 31s;">0</h1><h1 class="ani" style="left: 1080px;animation-delay: 1s;">1</h1>
+    <h1 class="ani" style="left: 1100px;animation-delay: 12s;">0</h1><h1 class="ani" style="left: 1120px;animation-delay: 47s;">1</h1>
+    <h1 class="ani" style="left: 1140px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 1160px;animation-delay: 41s;">1</h1>
+    <h1 class="ani" style="left: 1180px;animation-delay: 15s;opacity: 1;">0</h1><h1 class="ani" style="left: 1200px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 1220px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 1240px;animation-delay: 49s;">1</h1>
+    <h1 class="ani" style="left: 1260px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 1280px;animation-delay: 41s;">1</h1>
+    <h1 class="ani" style="left: 1300px;animation-delay: 38s;">0</h1><h1 class="ani" style="left: 1320px;animation-delay: 46s;">1</h1>
+    <h1 class="ani" style="left: 1340px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 1360px;animation-delay: 38s; opacity: 1;">1</h1>
+    <h1 class="ani" style="left: 1380px;animation-delay: 10.5s;">0</h1><h1 class="ani" style="left: 1400px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 1420px;animation-delay: 41s;">0</h1><h1 class="ani" style="left: 1440px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 1460px;animation-delay: 59s;">0</h1><h1 class="ani" style="left: 1480px;animation-delay: 38s;">1</h1>
+    <h1 class="ani" style="left: 1500px;animation-delay: 45s;">0</h1><h1 class="ani" style="left: 1520px;animation-delay: 49s;">1</h1>
+    <h1 class="ani" style="left: 1540px;animation-delay: 46s;">0</h1><h1 class="ani" style="left: 1560px;animation-delay: 52s; opacity: 1;">1</h1>
+    <h1 class="ani" style="left: 1580px;animation-delay: 35s;">0</h1><h1 class="ani" style="left: 1600px;animation-delay: 10.5s;">1</h1>
+    <h1 class="ani" style="left: 1620px;animation-delay: 43s;">0</h1><h1 class="ani" style="left: 1640px;animation-delay: 47s;">1</h1>
+    <h1 class="ani" style="left: 1660px;animation-delay: 29s;">0</h1><h1 class="ani" style="left: 1680px;animation-delay: 52s;">1</h1>
+    <h1 class="ani" style="left: 1700px;animation-delay: 38s;">0</h1><h1 class="ani" style="left: 1720px;animation-delay: 45s;">1</h1>
+    <h1 class="ani" style="left: 1740px;animation-delay: 52s;">0</h1><h1 class="ani" style="left: 1760px;animation-delay: 49s;">1</h1>
+    <h1 class="ani" style="left: 1780px;animation-delay: 59s;">0</h1><h1 class="ani" style="left: 1800px;animation-delay: 45s;">1</h1>
+    <h1 class="ani" style="left: 1820px;animation-delay: 2s; opacity:1;">0</h1><h1 class="ani" style="left: 1840px;animation-delay: 45s;">1</h1>
+    <h1 class="ani" style="left: 1860px;animation-delay: 38s;">0</h1><h1 class="ani" style="left: 1880px;animation-delay: 46s;">1</h1>
+    <h1 id="demo"></h1>
+    <div class="container">
+        <div class="col_1">
+            Kursga yozilish
+            <button>Yozilish</button>
+        </div>
+        <div class="col_2">
+            Biz xaqimizda
+            <button>O'qish</button>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(anime,4000);
+        var animateBack = document.getElementsByClassName("ani")
+        function anime(){
+            for(let i = 0; i < animateBack.length; i++){
+                animateBack[i].classList.add("aniStop");
+            }
+        }
+        setTimeout(fan,1000)
+        setTimeout(fan1,1200)
+        setTimeout(fan2,1300)
+        setTimeout(fan3,1400)
+        setTimeout(fan4,1500)
+        setTimeout(fan5,1600)
+        setTimeout(fan6,1700)
+        setTimeout(fan7,1800)
+        setTimeout(fan8,1900)
+        setTimeout(fan9,2000)
+        setTimeout(fan10,2100)
+        setTimeout(fan11,2200)
+        setTimeout(fan12,2300)
+        setTimeout(fan13,2400)
+        setTimeout(fan14,2500)
+        setTimeout(fan15,2600)
+        setTimeout(fan16,2700)
+        setTimeout(fan17,2800)
+        setTimeout(fan18,2900)
+        setTimeout(fan19,3000)
+        setTimeout(fan20,3100)
+        setTimeout(fan21,3200)
+        setTimeout(fan22,3300)
+        setTimeout(fan23,3400)
+        setTimeout(fan24,3500)
+        setTimeout(fan25,3600)
+        setTimeout(fan26,3700)
+        setTimeout(fan27,3800)
+        setTimeout(fan28,3900)
+        setTimeout(fan29,4000)
+        setTimeout(fan30,4100)
+        function fan(){
+            document.getElementById("demo").innerHTML += "D";
+        }
+        function fan1(){
+            document.getElementById("demo").innerHTML += "a";
+        }
+        function fan2(){
+            document.getElementById("demo").innerHTML += "s";
+        }
+        function fan3(){
+            document.getElementById("demo").innerHTML += "t";
+        }
+        function fan4(){
+            document.getElementById("demo").innerHTML += "u";
+        }
+        function fan5(){
+            document.getElementById("demo").innerHTML += "r";
+        }
+        function fan6(){
+            document.getElementById("demo").innerHTML += "l";
+        }
+        function fan7(){
+            document.getElementById("demo").innerHTML += "s";
+        }
+        function fan8(){
+            document.getElementById("demo").innerHTML += "h";
+            
+        }
+        function fan9(){
+            document.getElementById("demo").innerHTML += " K";
+        }
+        function fan10(){
+            document.getElementById("demo").innerHTML += "u";
+        }
+        function fan11(){
+            document.getElementById("demo").innerHTML += "r";
+        }
+        function fan12(){
+            document.getElementById("demo").innerHTML += "s";
+        }
+        function fan13(){
+            document.getElementById("demo").innerHTML += "i";
+        }
+        function fan14(){
+            document.getElementById("demo").innerHTML += "m";
+        }
+        function fan15(){
+            document.getElementById("demo").innerHTML += "i";
+        }
+        function fan16(){
+            document.getElementById("demo").innerHTML += "z";
+        }
+        function fan17(){
+            document.getElementById("demo").innerHTML += "g";
+        }
+        function fan18(){
+            document.getElementById("demo").innerHTML += "a";
+        }
+        function fan19(){
+            document.getElementById("demo").innerHTML += " x";
+        }
+        function fan20(){
+            document.getElementById("demo").innerHTML += "u";
+        }
+        function fan21(){
+            document.getElementById("demo").innerHTML += "s";
+        }
+        function fan22(){
+            document.getElementById("demo").innerHTML += "h";
+        }
+        function fan23(){
+            document.getElementById("demo").innerHTML += " k";
+        }
+        function fan24(){
+            document.getElementById("demo").innerHTML += "e";
+        }
+        function fan25(){
+            document.getElementById("demo").innerHTML += "l";
+        }
+        function fan26(){
+            document.getElementById("demo").innerHTML += "i";
+        }
+        function fan27(){
+            document.getElementById("demo").innerHTML += "b";
+        }
+        function fan28(){
+            document.getElementById("demo").innerHTML += "s";
+        }
+        function fan29(){
+            document.getElementById("demo").innerHTML += "i";
+        }
+        function fan30(){
+            document.getElementById("demo").innerHTML += "z";
+        }
+    </script>
+</body>
+</html>

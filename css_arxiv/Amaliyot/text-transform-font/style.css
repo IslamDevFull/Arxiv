@@ -1,0 +1,58 @@
+div{
+    border: 3px solid black;
+}
+
+/* text-transform" ( Bosh xarflarni katta yoki kichik qiladi ) */
+h1{
+    text-transform: capitalize;
+}
+
+/* "text-indent" ( Abzast ) */
+.q{
+    text-indent: 50px;
+}
+
+/* "letter-spacing" ( Xarflar orasidagi masofa ) */
+.w{
+    letter-spacing: -1px;
+}
+
+/* "word-spacing" ( so'zlar orasidagi masofa ) */
+.e{
+    word-spacing: 10px;
+}
+
+/* "line-height" ( Qartorlarga vertikal masofa  ) */
+.r{
+    line-height: 50px;
+}
+
+/* "white-spacing ( Yangi Qator ) */
+.t{
+    white-space: pre-line;
+}
+
+/* "text-shadow" ( Matnga soya ) */
+.y{
+    text-shadow: 2px 2px 1px red;
+}
+
+.u{
+    font-variant: small-caps;
+}
+
+.i{
+    font-size: 32px;
+}
+
+.o{
+    font-size: 2em;
+}
+
+.p{
+    font-size: 200%;
+}
+
+.a{
+    font-size: 4vw;
+}

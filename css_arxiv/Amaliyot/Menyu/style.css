@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+
+    /* ul{
+    background-color: #333;
+    list-style-type: none;
+    padding: 0;  /* 2 chi  20 px qoyish kerak  */
+   /* margin: 0;
+    text-align: center;
+   /* height: 80px;
+    line-height: 70px; */  /* 1 chi *//*
+}
+
+/* ul li{
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+ul li a{
+    color: chartreuse;
+}
+*/
+
+}
+ul{
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+ul li{
+    /*display: inline-block;
+    padding: 20px;*/
+    float: left;
+}
+ul li a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: blanchedalmond;
+    text-transform: capitalize;
+}
+.right{
+    float: right;
+}
+ul li a:hover{
+    background-color: black;
+    color: green;
+}
+
+ul li a:active{
+    background-color: rgb(34, 32, 32);
+    color: rgb(8, 179, 8);
+}
+
+
+

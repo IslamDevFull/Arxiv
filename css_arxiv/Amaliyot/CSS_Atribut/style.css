@@ -1,0 +1,15 @@
+/* 1 */
+a[target/*="_blank"*/]{
+    background-color: #999;
+    color: greenyellow;
+}
+
+/* 2 */
+img[title~=porsh]{
+    clip-path: circle(30%);
+}
+
+/* 3 */
+[class/* | *//* ~ *//* ^ *//* $ *//* * */=islom]{
+    background-color: greenyellow;
+}

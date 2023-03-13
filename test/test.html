@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Barkamol Avlod</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="E:\dasturlash\test\font-awesome-4.7.0\css\font-awesome.css">
+    <style>
+      * {
+  box-sizing: border-box; /*blokni Hajmini belgilaydi*/
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Bir Nechta Shriftlarni Qo'shadi*/
+  margin: 0; /* Elementlarni chap chetidan to'ldirish*/
+}
+.it {
+  padding: 80px; /* Matinga Masofa Belgilaydi*/
+  text-align: center; /* Matinni O'ng tomondan Joylashtiradi */
+  background: url(Barkamol.jpg); /* Fonga Rasim Yoki Rang O'rnatadi */
+  color: #333; /* Matini Rangini Belgilaydi */
+  padding-bottom: 50px;
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: 10px 10px; 
+}
+
+.it h1 {
+  font-size: 50px; /* Matinni Hajmini Belgilaydi */
+}
+
+.menyu *{
+  margin: 0; /* Menyuni tepadagi va pastagi bush qatorni yokotadi*/
+  padding: 0;  /* Menyuni chapdagi bo'sh qatorni yoqotadi*/
+}
+
+.menyu {
+  background: #333; /* Menyuni Fonini Belgilaydi*/
+  position: sticky; /* Menyuni Tepada Qotirib Qoyadi*/
+  top: 0; /* Menyuni tepagacha etadi*/
+}
+
+.menyu ul {
+  display: flex; /* Minyuni Silkalarini ketma ket chetdan joylashtiradi*/
+  justify-content: left; /* Minyuni silkalarini chap tomondan Joylashtiradi*/
+}
+
+.menyu ul li a{
+  display: block; /* hujjat qanday ko'rsatilishini belgilaydi */
+  padding: 15px 30px 15px 40px; /*Minyuni knopkalarini orasiga joy ochadi*/
+  font-size: 20px; /* Menyuni knopkalarini matnini xajmini belgilaydi*/
+  color: powderblue; /* Menyuni knopkalari matniga rang qo'shadi*/
+  text-decoration: none; /* Menyuni Silkalarini Ostki Chizig'ini Yoqotadi*/
+  /*text-transform: uppercase;*/ /* Menyuni Matn Xarflarini Xammasini Katta Qiladi*/
+  transition: all 0.6s ease;
+  
+}
+
+.menyu ul,ol {
+  list-style: none; /* Spiskani Tuqtalik Markerni Yoqotadi */
+}
+
+.menyu ul li{
+  position: relative;
+}
+
+.menyu ul li a i{
+  position: absolute;
+  top: 15px; /* Menyuni Ikkonkalarini tepa va past Hajmini Belgilaydi*/
+  left: 1.1px; /* Menyuni Ikkonkalarini Rost va Chap Hajmini Belgilaydi*/
+  font-size: 25px; /* Menyuni Ikkonkalarini Hajmini Belgilaydi*/
+}
+
+.menyu li a:hover{
+  background: black; /* Mishkani Keltirgan Payt Fon Rangini Belgilaydi*/
+  color: green; /* Mishkani Keltirgan Payt Matn Rangini Belgilaydi*/
+  box-shadow: 1px 10px 10px green; /* Mishkani Keltirgan Payt Fon Rangiga Soya Qo'shadi */
+  transition: all 0.5s ease; /* Mishkani Keltirgan Payt fon Rahgi Animatsiya Qo'shadi*/
+  /*transform: scale(1.1);*/
+}
+
+i:hover{
+  transform: scale(1.5);
+}
+
+.menyu ul li a.right {
+  left: 15px;
+
+}
+
+/*Ochiladigan Menyu*/
+.menyu li ul{
+  position: absolute; 
+  min-width: 150px; /* Ochiladigan Menyuni enini Belgilaydi*/
+  display: none; /* Ochiladigan Menyuni Yoshintiradi*/
+}
+.menyu li ul li{
+  border: 1px solid #c7c8ca; /* Ochiladin Menyuni Granitsasiga Rang Beradi*/
+}
+
+.menyu li ul li a{
+  padding: 10px; /* Ochiladigan Menyuni Masofasini Belgilaydi*/
+  text-transform: none; /*Ochiladigan Menyuni Matnini Yangi Qatordan Yozishga Qoymaydi*/
+  background: #333; /*Ochiladigan Menyuga Fon Rang Qo'shadi*/
+}
+
+/* Ikkinchi Ochiladigan Meyu*/
+.menyu li ul li ul{
+  position: absolute;
+  right: -187px; /* Ochiladigan Menyuni Ennini Belgilaydi*/
+  top: 0; /* Ochiladigan Menyuni tepa,pastnini Belgilaydi*/ 
+}
+
+.menyu li:hover ul{
+  display: block; /* Ochiladigan Menyuni Mishkani Keltirgan Payt Ochaydigon Qiladi*/
+}
+
+.down{
+  font-size: 15px;
+}
+
+.new{
+  float: left;
+  background: url(photo_2021-03-19_12-34-30.jpg);
+  background-blend-mode: multiply;
+
+  background-color: #333;
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+
+
+.new h2{ font-size: 4em; }
+
+.new h4{ color: #ccc; font-size: 1.5em;}
+
+.new .img{
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.new .img:nth-child(odd){
+  margin-left: 18%;
+}
+
+.new img{
+  background: purple;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  width: 100%;
+  height: 300px;
+  max-width: 500px;
+}
+
+.new span{
+  float: left;
+  width: 100%;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+/*Blok Kontaktlari*/
+.contacts{
+  width:100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #ccc;
+  background: #333;
+}
+
+.contacts h5{
+  font-size: 30px;
+  color: #ccc;
+  text-align: center;
+}
+
+.form{
+  margin-top: 15px;
+  width: 35%;
+  margin-left: 38%;
+  font-size: 20px;
+}
+
+.form label{
+  color: silver;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: inherit;
+}
+
+.form label span{
+  color: #e87e7e;
+}
+
+.form input,.form textarea{
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 2px solid silver;
+  font-size: 20px;
+  color: #4a4a4a;
+}
+
+.form input:focus, .form textarea:focus{
+  border-color: green;
+}
+
+.btn{
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 25px;
+  background-color: #ec6550;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color:white;
+  font-family: sans-serif;
+}
+
+.btn:hover{
+  background-color: #c15443;
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+.bosh {
+  flex-direction: column;
+  }
+}
+  
+@media screen and (max-width: 400px) {
+.menyu a {
+  float: none;
+  width: 100%;
+}  
+}
+
+
+table{
+  border: 2px solid black;
+  width: 100%;
+  height: 200px;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+
+th{
+  border: 2px solid black;
+  padding: 15px;
+  height: 50px;
+  background-color: rgb(50,200,100);
+}
+
+td{
+  border: 2px solid black;
+  padding: 15px;
+}
+
+tr:nth-child(even){
+  background-color:rgb(200,200,200)
+}
+
+tr:hover{
+  background-color: rgb(225,225,225);
+}
+    </style>
+  </head>
+  <body>
+
+<div class="it">
+<h1>Barkamol Avlod Bolalar Maktabi</h1>
+<p>Bolangiz Kelajak Sohasini O'rganishga Juda Katta Imkoniyat</p>
+</div>
+
+
+<nav class="menyu">
+  <ul>
+    <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Bosh Sahifa</a></li>
+    <li><a href="#"><i class="fa fa-diamond" aria-hidden="true"></i>Barkamol Avlod</a></li>
+    <li><a href="#"><i class="fa fa-graduation-cap" aria-hidden="true"></i>To'garaklar
+      <span class="down">&#x25bc</span></a>
+      <ul>
+        <li><a href="Yosh_Dasturchi.html">Yosh Dasturchi</a></li>
+        <li><a href="">Robototexnika</a></li>
+        <li><a href="#">Matimatika</a></li>
+        <li><a href="#">Fizika</a></li>
+        <li><a href="#">Ingliz-tili</a>
+          <ul class="malimlar">
+            <li><a href="#">Manzura Sultonovna</a></li>
+            <li><a href="#">Gulnora Raximovna</a></li>
+            <li><a href="#">Nargiza Fayzullaeva</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Rus-tili</a></li>
+      </ul>
+    </li>
+    <li><a href="#"><i class="fa fa-globe" aria-hidden="true"></i>Yangiliklar</a></li>
+    <li class="right"><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>Saytga Azo Bo'lish</a></li>
+  </ul>
+</nav>
+
+<div class="sidebar">
+<div>
+
+</div>
+</div>
+
+<div class="new">
+  <h2>To'garaklar</h2>
+  <h4>Biza Bilan Juda Qulay</h4>
+
+  <div class="img">
+    <img src="E:\test\Barkamol\photo_2021-04-06_12-30-39.jpg" alt="">
+    <span>Dasturlash</span>
+  </div>
+  <div class="img">
+   <img src="E:\test\Barkamol\photo_2021-04-06_12-30-48.jpg" alt="">
+    <span>Robototexnika</span>
+  </div>
+  <div class="img">
+   <img src="E:\test\Barkamol\photo_2021-03-15_09-57-31.jpg" alt="">
+    <span>Mental Arifmetika</span>
+  </div>
+  <div class="img">
+    <img src="E:\test\Barkamol\photo_2021-04-08_11-35-51.jpg" alt="">
+    <span>Gimnastika</span>
+  </div>
+
+</div>
+
+<div class="contacts">
+  <h5>Biz bilan Ulanish</h5>
+  <form class="form">
+    <label for="name">Ismingiz<span>*</span></label><br>
+    <input type="text" placeholder="Ismingizni Yozing" name="name" id="name">
+    <label for="email">Pochtangiz<span>*</span></label><br>
+    <input type="email" placeholder="Emailingizni Yozing" name="email" id="email">
+    <label for="meessage">Xabarnoma<span>*</span></label><br>
+    <textarea placeholder="O'z Xabarizni Qoldiring" name="message" id="message"></textarea><br>
+    <div id="mess_send" class="btn">Yuborish</div>
+  </form>
+</div>
+
+
+  </body>
+</html>

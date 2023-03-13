@@ -1,0 +1,76 @@
+ body{
+     height: 1500px;
+ }
+ 
+ /* 1 */
+/* float qo'shimcha misol */
+span{
+    font-size: 400%;
+    font-family: algerian;
+    float: left;
+    line-height: 80%;
+    margin: 0 5px 0 0;
+}
+
+    /* 2 */
+/* flex-wrap */
+.div{
+    display: flex;
+    background-color: powderblue;
+    flex-wrap: nowrap;
+}
+
+.box{
+    background-color: rgb(200,200,200);
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+
+}
+
+    /* 3 */
+/* flex-wrap */
+ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+ul li img{
+    width: 300px;
+    height: 250px;
+}
+
+ul li{
+    padding: 20px;
+    background-color: rgb(200,200,200);
+    margin: 5px;
+}
+
+    /* 4 */
+/* resize */
+textarea{
+    border: 2px solid #ccc;
+    padding: 20px;
+    resize: none;
+}
+
+
+                    /* 5 */
+/* counter-reset, counter-increment, content */
+body{
+    counter-reset: section;
+}
+
+h2::before{
+    counter-increment: section;
+    content: "section" counter(section) ":";
+}
+
+.i{
+    border: 10px solid transparent;
+    border-image: url(border.png) 20 repeat;
+    padding: 20px;
+}

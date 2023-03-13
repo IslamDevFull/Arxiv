@@ -1,0 +1,60 @@
+.game{
+    height: 300px; /* blokni bo'yi */
+    width: 800px; /* blokni Enni */
+    border-bottom: 1px solid black; /* blokga ostki chiziq paydo qiladi */ 
+    margin: auto; /* kontentni o'rtaga Joylashtiradi */
+}
+
+/* dinazavrik */
+#dino{
+    width: 70px; /* dinani blokini enni */
+    height: 70px; /* dinnani blorinni bo'yi */
+    background-image: url(dina.png); /* dinazavrikni rasmi */
+    background-size: 70px 70px; /* rasmni hajmi */ 
+    position: relative; /* rasmni alohida qiladi */
+    top: 230px; /* rasmni tegadan pastga Joylashtiradi */
+}
+
+#cactus{
+    width: 90px; /* cactus blokini enni */
+    height: 90px; /* cactus blorinni bo'yi */
+    background-image: url(cactus.png); /* cactus rasmi */
+    background-size: 90px 90px; /* rasmni hajmi */ 
+    position: relative; /* rasmni alohida qiladi */
+    top: 145px; /* rasmni tegadan pastga Joylashtiradi */
+    left: 750px; /* rasimni chap tomonga joylashtiradi */
+    animation: cactus 2s infinite /* animatsiz tuxtamastan davon etadi*/ linear /* animatsiyani tezligi */;
+}
+
+/* animatsiya cactus  */
+@keyframes cactus{ /* animatsiyani ismi */
+    0%{  /* animatsiyani boshlanishi */
+        left: 750px; /* qaysi joydan boshlanishi */
+    }
+    100%{ /* animatsiyani tugashi */
+        left: -50px; /* qaysi joyda tugashi */
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+/* animatsiya sakrash */
+@keyframes jump { /* animatsiyani ismi */
+    0%{  /* animatsiyani 1 chi kadri */
+        top: 200px; /* 150 piksetl tepa joydan boshlanishi */
+    }
+    30%{ /* animatsiyani 2 chi kadri */
+        top: 150px; /* 130 piksel tepa ketadi */
+    }
+    50%{ /* animatsiyani 3 chi kadri */
+        top: 100px; /* 80 piksel tepa ketadi */
+    }
+    80%{ /* animatsiyani 4 chi kadri */
+        top: 150px; /* 130 piksel tepa ketadi */
+    }
+    100%{ /* animatsiyani 5 chi kadri */
+        top: 200px; /* 150 piksel tepa ketib o'sha joyda tugashi */
+    }
+}

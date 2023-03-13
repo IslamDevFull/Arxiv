@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="E:\dasturlash\Barkamol_avlod\favicon\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="E:\dasturlash\Barkamol_avlod\font-awesome-4.7.0\css\font-awesome.css">
+    <title>Barkamol Avlod</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            height: 1500px;
+            background-image: url(header.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;            
+            background-blend-mode: multiply;
+            background-color: rgb(128, 126, 126);
+            margin: 0;
+            padding: 0;
+        }
+
+        .header{
+            text-align: center;
+            color: blue;
+            max-width: 1350px;
+            position: relative;
+            margin: auto;
+        }
+
+        .header h1{
+            font-size: 4vw;
+            margin: 60px 0;
+        }
+
+        .header p{font-size: 2vw;}
+
+        .slaytim{display: none;}
+
+        img{vertical-align: middle;}
+
+        .orqa, .oldin{
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .oldin{
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .orqa{
+            left: 0;
+        }
+
+        .oldin:hover, .orqa:hover{
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .matn{
+            color: red;
+            font-size: 40px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+        }
+
+        .raqam{
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        .nuqtalar{
+            position: absolute;
+            top: 75%;
+            left: 50%;
+
+        }
+
+        .nuqta{
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: all 0.6s ease;
+        }
+
+        .activ,
+        .nuqta:hover{
+            background-color: #717171;
+        }
+
+        .yitadi{
+            animation-name: yitadi;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes yitadi {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        .logo{
+            position: fixed;
+            left: 50px;
+            top: 20px;
+        }
+
+        .logo img{
+            border-radius: 40%;
+            width: 70px;
+            height: 70px;
+        }
+
+        .delok{
+            float: right;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .dropdown{
+            float: left;
+            position: absolute;
+            right: 150px;
+            padding: 10px;
+        }
+        
+        .dropBtn{
+            padding: 0 4px 4px;
+            background: none;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+            border-radius: 50%;
+            border: none;
+            transition: all 1s;
+        }
+
+        .dropContent{
+            display: none;
+        }
+
+        .dropContent a{
+            text-decoration: none;
+            padding: 5px 0;
+            color: white;
+            display: block;
+            transition: all 1s;
+        }
+
+        .show{display: block;}
+
+        .login{
+            float: left;
+            padding: 10px;
+        }
+
+        .login a{
+            text-decoration: none;
+            margin: 5px;
+            color: white;
+            font-size: 18px;
+            padding: 0 0 4px;
+            transition: all 1s;
+        }
+
+        .login a:hover, .dropBtn:hover, .dropContent a:hover{
+            border-bottom: 1px solid blue;
+        }
+
+        .navbar{
+            /*border: 2px solid red;*/
+            background-color: rgba(51, 51, 51,0.3);
+            transition: all 1.5s;
+            position: absolute;
+            top: 440px;
+            width: 1349px;
+        }
+
+        .navbar ul{
+            /*border: 2px solid red;*/
+            list-style: none;
+            margin: 0;
+            padding: 2px 10px;
+            display: flex;
+            justify-content: right;
+        }
+
+        .navbar ul li{
+            padding: 5px 9px;            
+        }
+
+        .navbar ul li a{
+            text-decoration: none;
+            color: powderblue;
+            font-size: 25px;
+            padding: 9px 10px;
+            transition: all 2s;
+            display: block;
+        }
+
+        .navbar ul li a i{
+            font-size: 25px;
+            position: relative;
+            left: -3px;
+        }
+
+        .navbar:hover{
+            background-color: rgba(51, 51, 51,1);
+        }
+
+        .navbar ul li a:hover{
+            border-bottom: 1px solid blue;
+        }
+
+        .navbar ul li ul{
+            background-color: #333;
+            position: absolute;
+            right: 564px;
+            top: 58px;
+            display: none;
+            padding: 0;
+        }
+
+        .navbar ul li ul li{
+            /*border: 2px solid red;*/
+            padding: 0;
+        }
+
+        .navbar ul li ul li a{
+            border-bottom: 2px solid powderblue;
+            display: block;
+            padding: 10px 5px;
+            animation: menyu 2s;
+        }
+
+        .navbar ul li:hover ul{
+            display: inline-block;
+        }
+        
+        .navbar ul li ul li a:hover{
+            border-bottom: 2px solid blue;
+            background-color: rgba(20, 20, 20);
+        }
+
+        @keyframes menyu {
+            from {opacity: 0.1;}
+            to {opacity: 1;}
+        }
+
+        .content{
+            width: 100%;
+            height: 800px;
+            background-color: aquamarine;
+        }
+
+        .normal{
+            width: 70%;
+            height: 800px;
+            background-color: blueviolet;
+            float: left;
+        }
+
+        .sidebar{
+            width: 30%;
+            height: 800px;
+            background-color: brown;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="slaytim yitadi">
+            <div class="raqam">1 / 3</div>
+            <img  src="photo_2021-04-08_11-00-16.jpg" alt="dasturchi" style="width: 100%; height: 500px;">
+            <div class="matn">Yosh Dasturchi To'garagi</div>
+        </div>
+        <div class="slaytim yitadi">
+            <div class="raqam">2 / 3</div>
+            <img src="header.jpg" alt="Barkamol_avlod" style="width: 100%; height: 500px;">
+            <div class="matn">Barkamol Avlod Bolalar Maktabi</div>
+        </div>
+        <div class="slaytim yitadi">
+            <div class="raqam">3 / 3</div>
+            <img src="photo_2021-03-29_15-51-31.jpg" alt="gimnastika" style="width: 100%; height: 500px;">
+            <div class="matn">Gimnastika</div>
+        </div>
+        <a class="orqa" onclick="ortiqchaSlaydlar(-1)">&#10094</a>
+        <a class="oldin" onclick="ortiqchaSlaydlar(1)">&#10095</a>
+        <div class="nuqtalar" style="text-align: center;">
+            <span class="nuqta" onclick="joriySlayd(1)"></span>
+            <span class="nuqta" onclick="joriySlayd(2)"></span>
+            <span class="nuqta" onclick="joriySlayd(3)"></span>
+        </div>
+
+        <a class="logo" href="#">
+            <img src="E:\dasturlash\Barkamol_avlod\favicon\apple-touch-icon.png" alt="Logo">
+        </a>
+        <div class="delok">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropBtn"><i class="fa fa-globe"></i></button>
+                <div id="drop" class="dropContent">
+                    <a href="#">UZ</a>
+                    <a href="#">RU</a>
+                    <a href="#">EN</a>
+                </div>
+            </div>
+            <div class="login">
+                <a href="#">Ulanish</a>
+                <a href="#">Kirish</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a style="border-bottom: 1px solid blue;" href="#"><i class="fa fa-home"></i>Bosh sahifa</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-graduation-cap"></i>To'garaklar
+                        <span style="font-size: 15px;">&#x25bc</span>
+                    </a>
+                    <ul>
+                        <li><a href="#">Yosh Dasturchi</a></li>
+                        <li><a href="#">Robototexnika</a></li>
+                        <li><a href="#">Rus-tili</a></li>
+                        <li><a href="#">Ingliz-tili</a></li>
+                        <li><a href="#">Matemetika</a></li>
+                    </ul>
+                </li>
+                <li><a href="E:\dasturlash\Barkamol_avlod\ustozlar\index.html"><i class="fa fa-users"></i>Ustozlar</a></li>
+                <li><a href="#"><i class="fa fa-star"></i> Ko'rgazmalar</a></li>
+                <li><a href="#"><i class="fa fa-diamond"></i> Yangiliklar</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="normal">
+
+        </div>
+        <div class="sidebar">
+
+        </div>
+    </div>
+    
+    <script>
+        var SlaydIndeksi = 0;
+        carusel();
+
+        function carusel() {
+            var i;
+            var slaytlar = document.getElementsByClassName("slaytim");
+            for (i = 0; i < slaytlar.length; i++) {
+                slaytlar[i].style.display = "none";
+            }
+            SlaydIndeksi++;
+            if(SlaydIndeksi > slaytlar.length) {SlaydIndeksi = 1}
+            slaytlar[SlaydIndeksi - 1].style.display = "block";
+            setTimeout(carusel,3000);
+        }
+
+        var SlaydIndeksi = 1;
+        SlaydniKorsatish(SlaydIndeksi);
+
+        function ortiqchaSlaydlar(n) {
+            SlaydniKorsatish(SlaydIndeksi += n);
+        }
+
+        function joriySlayd(n) {
+            SlaydniKorsatish(SlaydIndeksi = n);
+        }
+
+        function SlaydniKorsatish(n) {
+            var i;
+            var slaytlar = document.getElementsByClassName("slaytim");
+            var nuqtalar = document.getElementsByClassName("nuqta");
+            if (n > slaytlar.length) {SlaydIndeksi = 1}
+            if (n < 1){SlaydIndeksi = slaytlar.length}
+            for (i = 0; i < slaytlar.length; i++) {
+                slaytlar[i].style.display = "none";
+            }
+            for(i = 0; i < nuqtalar.length; i++) {
+                nuqtalar[i].className = nuqtalar[i].className.replace(" activ", "");
+            }
+            slaytlar[SlaydIndeksi - 1].style.display = "block";
+            nuqtalar[SlaydIndeksi - 1].className += " activ";
+        }
+
+        function myFunction() {
+            document.getElementById("drop").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropBtn')) {
+                var btn = document.getElementsByClassName("dropContent");
+                var i;
+                for (i = 0; i < btn.length; i++) {
+                    var openBtn = btn[i];
+                    if (openBtn.classList.contains("show")) {
+                        btn.classList.remove("show");
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

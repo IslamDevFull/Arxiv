@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+        body{
+            height:4000px;
+        }
+
+        h1{
+            text-align: center;
+        }
+        /*////////// 0 //////////*/
+        .d{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            animation-name: anime;
+            animation-duration: 3s;
+        }
+        @keyframes anime{
+            from{background-color: orchid;}
+            to{background-color: purple;}
+        }
+
+        /*////////// 1 //////////*/
+        .d1{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            animation-name: anime1;
+            animation-duration: 10s;
+        }
+        @keyframes anime1{
+            0%{background-color: yellow;}
+            25%{background-color: red;}
+            50%{background-color: green;}
+            100%{background-color: blue;}
+        }
+
+        /*////////// 2 //////////*/
+        .d2{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            animation-name: anime2;
+            animation-duration: 4s;
+            animation-delay: 3s;
+            position: relative;
+        }
+        @keyframes anime2{
+            0%{
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                background-color: red;
+                left: 200px; 
+                top: 0px;
+            }
+            50%{
+                background-color: green;
+                left: 200px; 
+                top: 200px;
+            }
+            70%{
+                background-color: blue;
+                left: 0px;
+                top: 200px;
+            }
+            100%{
+                background-color: blue;
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /*////////// 3 //////////*/
+        .d3{
+            text-align: center;
+            font-size: 30px;
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes blink{
+            0%{opacity: 1;}
+            50%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+
+        /*////////// 4 //////////*/
+        .box{
+            width: 150px;
+            background-color: orange;
+            text-align: center;
+            padding: 20px 0;
+            margin: 30px 0;
+            animation-name: box;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes box{
+            0%{left: 0%;}
+            100%{left: 89%;}
+        }
+        .normal{
+            animation-direction: normal;
+            background-color: orchid;
+        }
+        .alternate{
+            animation-direction: alternate;
+            background-color: palegoldenrod;
+        }
+        .reverse{
+            animation-direction: reverse;
+            background-color: paleturquoise;
+        }
+        .alternate-reverse{
+            animation-direction: alternate-reverse;
+            background-color: lime;
+        }
+
+        /*////////// 5 //////////*/
+        .linear{
+            background-color: cadetblue;
+            animation-timing-function: linear;
+        }
+        .ease{
+            background-color: coral;
+            animation-timing-function: ease;
+        }
+        .ease-in{
+            background-color: hotpink;
+            animation-timing-function: ease-in;
+        }
+        .ease-out{
+            background-color: khaki;
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out{
+            background-color: lawngreen;
+            animation-timing-function: ease-in-out;
+        }
+        .step-start{
+            background-color: lightgreen;
+            animation-timing-function: step-start;
+        }
+        .step-end{
+            background-color: powderblue;
+            animation-timing-function: step-end;
+        }
+        .steps{
+            background-color: powderblue;
+            animation-timing-function: steps(24);
+        }
+
+        /*////////// 6 //////////*/
+
+        .container{
+            border: 2px solid black;
+        }
+
+        .box1{
+            width: 10%;
+            padding: 10px;
+            
+        }
+
+        .linear1{
+            background-color: cadetblue;
+            animation-timing-function: linear;
+        }
+        .ease1{
+            background-color: coral;
+            animation-timing-function: ease;
+        }
+        .ease-in1{
+            background-color: hotpink;
+            animation-timing-function: ease-in;
+        }
+        .ease-out1{
+            background-color: khaki;
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out1{
+            background-color: lawngreen;
+            animation-timing-function: ease-in-out;
+        }
+        .step-start1{
+            background-color: lightgreen;
+            animation-timing-function: step-start;
+        }
+        .step-end1{
+            background-color: powderblue;
+            animation-timing-function: step-end;
+        }
+        .steps1{
+            background-color: rosybrown;
+            animation-timing-function: steps(5,end);
+        }
+        .cubic-bezier1{
+            background-color: silver;
+            animation-timing-function: cubic-bezier(0.1,-0.6,0.2,0);
+        }
+
+        @keyframes box1{
+            0%{width: 10%;}
+            100%{width: 100%;}
+        }
+
+        .container:hover .box1{
+            animation-name: box1;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+        }
+        
+        /*////////// 7 //////////*/
+        .cub{
+            background-color: powderblue;
+            width: 200px;
+            height: 200px;
+            animation: cub 2s infinite 2s linear alternate;
+            position: relative;
+        }
+        @keyframes cub{
+            0%{
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                left: 200px;
+                top: 200px;
+            }
+            50%{
+                left: 0;
+                top: 200px;
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        /*////////// 8 //////////*/
+        .cub1{
+            margin-top: 200px;
+        }
+
+        .cub1_1{
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            animation: cub1 6s ease-in-out 1s;
+            animation-fill-mode: forwards;
+            position: relative;
+        }
+
+        @keyframes cub1{
+            0%{
+                transform: rotate(0deg);
+                left: 0px;
+            }
+            10%{
+                transform: rotate(90deg);
+                left: 200px;
+            }
+            20%{
+                transform: rotate(180deg);
+                left: 400px;
+            }
+            30%{
+                transform: rotate(270deg);
+                left: 600px;
+            }
+            40%{
+                transform: rotate(360deg);
+                left: 800px;
+            }
+            50%{
+                transform: rotate(450deg);
+                left: 1000px;
+            }
+            60%{
+                transform: rotate(540deg);
+                left: 1200px;
+            }
+            70%{
+                transform: rotate(630deg);
+                left: 1400px;
+            }
+            100%{
+                transform: rotate(720px);
+                left: 1600px;
+            }
+           
+        }
+
+        /*////////// 9 //////////*/
+        .container1{
+            margin-top: 100px;
+        }
+        .face{
+            height: 500px;
+            width: 500px;
+            background-color: salmon;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .eye{
+            width: 60px;
+            height: 60px;
+            background-color: snow;
+            border-radius: 50%/100%;
+            animation: face 8s infinite 3s;
+            position: relative;
+        }
+
+        .o{
+            left: 120px;
+            top: 115px;
+            border: 2px solid black;
+        }
+
+        .o1{
+            left: 290px;
+            top: 50px;
+            border: 2px solid black;
+        }
+
+        .smile{
+            width: 70px;
+            height: 30px;
+            background-color: snow;
+            border: 2px solid black;
+            position: relative;
+            top: 250px;
+            border-radius: 100%/50%;
+            margin: auto;
+            animation: smile 8s infinite 3s ;
+        }
+
+        @keyframes face{
+            0%{
+                transform: rotateY(0);
+            }
+            94%{
+                transform: rotateX(70deg);
+            }
+            95%{
+                transform: rotateY(0);
+            }
+        }
+
+        @keyframes smile{
+            0%{
+                width: 70px;
+            }
+            94%{
+                width: 90px;
+                border-radius: 100%/90%;
+                transform: rotateX(150deg);
+            }
+            95%{
+                width: 110px;
+                border-radius: 100%/100%;
+                transform: rotateX(250deg);
+            }
+        }
+
+        .face:hover .eye{
+            animation: face 1s infinite ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <!--////////// 0 //////////-->
+    <h1><mark>Animation-name<br>Animation-duration<br>Animation-delay<br>Animation-iteration-count: infinite;</mark></h1>
+    <div class="d"></div><br>
+    <!--////////// 1 //////////-->
+    <div class="d1"></div><br>
+    <!--////////// 2 //////////-->
+    <div class="d2"></div><br><br>
+    <!--////////// 3 //////////-->
+    <div class="d3">Yonib o'chaydigan matn etiborni o'ziga tortadi</div><br><br><br>
+    <!--////////// 4 //////////-->
+    <h1><mark>Animation-direction</mark></h1>
+    <div class="box normal">normal</div>
+    <div class="box alternate">alternate</div>
+    <div class="box reverse">reverse</div>
+    <div class="box alternate-reverse">alternate-reverse</div>
+    <!--////////// 5 //////////-->
+    <h1><mark>Animation-timing-function</mark></h1>
+    <div class="box linear">linear</div>
+    <div class="box ease">ease</div>
+    <div class="box ease-in">ease-in</div>
+    <div class="box ease-out">ease-out</div>
+    <div class="box ease-in-out">ease-in-out</div>
+    <div class="box step-start">step-start</div>
+    <div class="box step-end">step-end</div>
+    <div class="box steps">steps</div>
+    <!--////////// 6 //////////-->
+    <h1><mark>Animation-timing-function<br>Animation-fill-mode</mark></h1>
+    <div class="container">
+    <div class="box1 linear1">linear</div>
+    <div class="box1 ease1">ease</div>
+    <div class="box1 ease-in1">ease-in</div>
+    <div class="box1 ease-out1">ease-out</div>
+    <div class="box1 ease-in-out1">ease-in-out</div>
+    <div class="box1 step-start1">step-start</div>
+    <div class="box1 step-end1">step-end</div>
+    <div class="box1 steps1">steps</div>
+    <div class="box1 cubic-bezier1">cubic-bezier(0.1,-0.6,0.2,0)</div>
+    </div>
+    <!--////////// 7 //////////-->
+    <h1><mark>Animation</mark></h1>
+    <div class="cub"></div>
+    <!--////////// 8 //////////-->
+    <div class="cub1">
+    <h1><mark>Misol</mark></h1>
+    <div class="cub1_1"></div>
+    </div>
+    <!--////////// 9 //////////-->
+    <div class="container1">
+    <h1><mark>Misol (2)</mark></h1>
+    <div class="face">
+        <div class="eye o"></div>
+        <div class="eye o1"></div>
+        <div class="smile"></div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D</title>
+    <style>
+
+        body{
+            height: 5000px;
+        }
+
+        /* ////////// 0 ////////// */
+        .t{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+        }
+        .t:hover{
+            transform: translate(393px,1px);
+        }
+
+        /* ////////// 1 ////////// */
+        .t1{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: auto;
+        }
+        .t1:hover{
+            transform: rotate(40deg);  /* (-20deg) qoyish misol uchun */
+        }
+
+        /* ////////// 2 ////////// */
+        .t2{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: auto;
+        }
+        .t2:hover{
+            transform: rotateY(190deg);  /* (-20deg) qoyish misol uchun */
+        }
+
+        /* ////////// 3 ////////// */
+        .t3{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: auto;
+        }
+        .t3:hover{
+            transform: scale(2,1);  /* (0.5,0.5) qoyish misol uchun */
+        }
+
+        /* ////////// 4 ////////// */
+        .t4{
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: auto;
+        }
+        .t4:hover{
+            transform: skew(10deg,10deg);  /* (-30deg) qoyish misol uchun */
+        }
+
+        /* ////////// 5 ////////// */
+        .d{
+            background-color: greenyellow;
+            border: 3px solid black;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            transition: all 3s;
+        }
+        .d:hover{
+            width: 600px;
+           /* height: 400px;
+            background-color: palevioletred;*/
+        }
+        .d:active{
+            background-color: purple;
+            width: 800px;
+        }
+        .a1{
+           transition-timing-function: linear;
+          /* transition-delay: 3s;  */
+        }
+        .a2{
+           transition-timing-function: ease; 
+        }
+        .a3{
+           transition-timing-function: ease-in; 
+        }
+        .a4{
+           transition-timing-function: ease-out; 
+        }
+        .a5{
+           transition-timing-function: ease-in-out; 
+        }
+        .a6{
+           transition-timing-function: step-start; 
+        }
+        .a7{
+           transition-timing-function: step-end; 
+        }
+        .a8{
+           transition-timing-function: steps(10); 
+        }
+
+        /* ////////// 6 ////////// */
+
+        .i{
+            background-color: salmon;
+            height: 200px;
+            width: 200px;
+            border: 3px solid black;
+            transition: all 3s;
+        }
+
+        .i:hover{
+            transform: translate(564px,1px);
+        }
+        .i:active{
+            background-color: purple;
+            color: white;
+            transform: translate(850px,1px);
+            border: 8px solid black;
+        }
+
+        /* ////////// 7 ////////// */
+        .i1{
+            background-color: salmon;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 3px solid black;
+            transition: all 3s;
+        }
+
+        .i1:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotate(180deg);
+        }
+        .i1:active{
+            background-color: purple;
+            border: 10px solid black;
+            color: white;
+            transform: rotate(360deg);
+            width: 600px;
+            height: 600px;
+            text-indent: 180px;
+            padding-top: 250px;
+            font-size: 30px;
+        }
+
+        /* ////////// 8 ////////// */
+        .i2{
+            background-color: salmon;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 3px solid black;
+            transition: all 3s;
+        }
+
+        .i2:hover{
+            width: 400px;
+            height: 400px;
+            transform: rotateY(190deg);
+        }
+        .i2:active{
+            background-color: purple;
+            border: 10px solid black;
+            color: white;
+            transform: rotateY(360deg);
+            width: 600px;
+            height: 600px;
+            text-indent: 180px;
+            padding-top: 250px;
+            font-size: 30px;
+        }
+
+        .i3{
+            background-color: salmon;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 3px solid black;
+            transition: all 3s;
+        }
+
+        .i3:hover{
+            width: 400px;
+            height: 400px;
+            transform: scale(1,1);
+        }
+        .i3:active{
+            background-color: purple;
+            border: 10px solid black;
+            color: white;
+            transform: scale(2,2);
+            width: 600px;
+            height: 600px;
+            text-indent: 180px;
+            padding-top: 250px;
+            font-size: 30px;
+        }
+
+        .i4{
+            background-color: salmon;
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            border: 3px solid black;
+            transition: all 3s;
+        }
+
+        .i4:hover{
+            width: 400px;
+            height: 400px;
+            transform: skew(20deg,10deg);
+        }
+        .i4:active{
+            background-color: purple;
+            border: 10px solid black;
+            color: white;
+            transform: skew(40deg,20deg);
+            width: 600px;
+            height: 600px;
+            text-indent: 180px;
+            padding-top: 250px;
+            font-size: 30px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Transform</h1>
+    <!-- ////////// 0 ////////// -->
+    <div class="t">Transform</div>
+    <!-- ////////// 1 ////////// -->
+    <div class="t1">Transform</div>
+    <!-- ////////// 2 ////////// -->
+    <div class="t2">Transform</div>
+    <!-- ////////// 3 ////////// -->
+    <div class="t3">Transform</div>
+    <!-- ////////// 4 ////////// -->
+    <div class="t4">Transform</div>
+
+    <!-- ////////// 5 ////////// -->
+    <h1 style="text-align: center;">Transition</h1>
+    <div class="d">Transition</div>
+    <div class="d a1">Boshidan oxirigacha bir xil tezlik.</div>
+    <div class="d a2">Animatsiya asta -sekin boshlanadi, 
+        keyin harakatning oxirigacha tezlashadi va yana sekinlashadi.</div>
+    <div class="d a3">Animatsiya sekin boshlanadi, oxirigacha tezlashadi.</div>
+    <div class="d a4">Animatsiya tezda boshlanadi, oxirigacha sekinlashadi.</div>
+    <div class="d a5">Animatsiya sekin boshlanadi va sekin tugaydi.</div>
+    <div class="d a6">Animatsiya yo'q. 
+        Uslubning xususiyatlari darhol yakunlanadi.</div>
+    <div class="d a7">Animatsiya yo'q. Uslub xususiyatlari ko'rsatilgan 
+        vaqt Ushlanib turadi,so'ngra darov yakuniy qiymatni oladi.</div>
+    <div class="d a8">Belgilangan qadamlar bilan ro'rsatadi.</div>
+
+    <!-- ////////// 6 ////////// -->
+    <div class="i">Transform Transition</div>
+    <div class="i1">Transform Transition</div>
+    <div class="i2">Transform Transition</div>
+    <div class="i3">Transform Transition</div>
+    <div class="i4">Transform Transition</div>
+    
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        body{
+            height: 1000px;
+        }
+        .t{
+            text-align: center;
+            text-shadow: 2px 2px 5px red;
+           /* text-shadow: 0px 0px 5px red; */
+        }
+        .t1{
+            text-align: center;
+            text-shadow: 2px 2px 4px black;
+            color: white;
+        }
+        .t2{
+            text-align: center;
+            text-shadow: 0px 0px 4px red;
+        }
+        .t3{
+            text-align: center;
+            text-shadow: 0px 0px 4px  #ff0000, 0px 0px 5px #0000ff;
+        }
+        .t4{
+            text-align: center;
+            text-shadow: 1px 1px 2px  black, 0px 0px 25px blue, 0px 0px 5px darkblue ;
+            color: white;
+        }
+        .t5{
+            text-align: center;
+            text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+            color: yellow;
+        }
+        .d{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            box-shadow: 10px 10px;
+            margin: auto;
+        }
+        .d1{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            box-shadow: 10px 10px red;
+            margin: auto;
+        }
+        .d2{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            box-shadow: 10px 10px 5px grey;
+            margin: auto;
+        }
+        .d3{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            box-shadow: -5px 0px 10px red, 5px 0px 10px red, 0px -5px 10px red, 0px 5px 10px red ;
+            margin: auto;
+        }
+        .d4{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            margin: auto;
+        }
+        .d4:hover{
+            box-shadow: -5px 0px 5px red, 5px 0px 5px red, 0px -5px 5px red, 0px 5px 5px red ;
+        }
+        .d5{
+            background-color: yellow;
+            width: 300px;
+            height: 150px;
+            justify-content: center;
+            margin: auto;
+        }
+        .d5:hover{
+            box-shadow: -5px 0px 5px rgba(255,0,0,0.2), 5px 0px 5px rgba(255,0,0,0.2), 0px -5px 5px rgba(255,0,0,0.2), 0px 5px 5px rgba(255,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="t">Islam</h1>
+    <h1 class="t1">Islam</h1>
+    <h1 class="t2">Islam</h1>
+    <h1 class="t3">Islam</h1>
+    <h1 class="t4">Islam</h1>
+    <h1 class="t5">Islam</h1>
+    <div class="d"></div><br><br>
+    <div class="d1"></div><br><br>
+    <div class="d2"></div><br><br>
+    <div class="d3"></div><br><br>
+    <div class="d4"></div><br><br>
+    <div class="d5"></div><br><br>
+</body>
+</html>
