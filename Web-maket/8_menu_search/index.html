@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\test\test\Web-maket\7_menu_icons\font-awesome-4.7.0\css\font-awesome.css">     
+    <title>Document</title>
+    <style>
+        *{
+          box-sizing: border-box;
+        }
+        body{
+          margin: 0;
+          font-family: papyrus;
+          font-weight: bold;
+          background-color: #f1f1f1;
+          padding: 10px;
+           
+        }
+        /* header */
+        .header{
+          background-color: #f1f1f1;
+          padding: 40px 20px;
+          text-align: center;
+        }
+        /* menu konteyner */
+        .navbar{
+          background-color: #444;
+          overflow: hidden;
+        }
+        /* menu silka ( a ) */
+        .navbar a{
+          display: block;
+          float: left;
+          color: wheat;
+          padding: 15px 25px;       
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size: 20px;
+          border-radius: 20px/100px;
+        }
+        /* uy */
+        .activ{
+            background-color: green;
+        }
+        /* ikon */                 
+        .navbar a i{
+          font-size: 30px;
+          position: relative;
+          top: 5px;
+          right: 5px;
+        }
+        /* :hover silkaga ( a ) */
+        .navbar a:hover{
+          background-color: black;
+          color: greenyellow;
+        }
+        /* :focus silkaga ( a ) */
+        .navbar a:focus{
+          background-color: black;
+          color: greenyellow;
+        }
+        /* input */                       /* ////////// 1 ////////// */
+        .navbar input[type="text"]{
+          padding: 10px;
+          width: 380px;
+          border: 0;
+          font-size: 15px;
+        }
+        /* button */                      /* ////////// 2 ////////// */
+        .navbar form button{
+          padding: 6px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background-color: #ddd;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+        }
+
+        /* form */                        /* ////////// 3 ////////// */
+        form{
+          float: right;
+          margin-top: 8px;
+        }
+        /* button :hover */               /* ////////// 4 ////////// */
+        .navbar form button:hover{
+          background-color: #bbbbbb;
+        }
+
+        /* input focus */                 /* ////////// 5 ////////// */
+        .navbar form input:focus{
+          outline: 2px solid greenyellow;
+        }
+        
+        /* content  */
+        .content {   
+          float: left;
+          width: 75%;
+        }
+
+        /* o'ng tomon content */
+        .content_side {
+          float: left;
+          width: 25%;
+          background-color: #f1f1f1;
+          padding-left: 20px;
+        }
+
+        /* rasm */
+        .img {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+
+        /* Maqolalar uchun karta effektini qo'shamiz */
+        .card {
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+        }
+
+        /* floatni o'chirish */
+        .container:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* podval */
+        .footer {
+          background: #ddd;
+          padding: 50px;
+          text-align: center;
+          height: 200px;          
+          margin-top: 20px;
+          font-size: 30px;
+        }
+
+        /* Ekran kengligi 800px dan kam bo'lganda, ikkita ustunni yonma-yon emas, balki ustiga qo'yamiz. */
+      /*  @media screen and (max-width: 800px) {
+        .content, .content_side {   
+          width: 100%;
+          padding: 0;
+          }
+        } */
+
+        /* Ekran kengligi 400px dan kam bo'lganda, navigatsiya silkalarini yonma-yon emas, balki ustiga qo'yamiz. */
+      /*  @media screen and (max-width: 700px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+          }
+        }*/
+
+      /*  @media screen and (max-width: 700px) {
+          .navbar form{
+            float: none;
+          }
+          .navbar form input[type="text"] {
+            width: 280px;
+            margin-left: 15px;
+          }
+        }*/
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sahifam</h1>
+    </div>
+    <nav class="navbar">
+        <a class="activ" href="#"><i class="fa fa-home"></i> uy</a>
+        <a href="#"> <i class="fa fa-map-signs"></i> shaxarlar</a>
+        <a href="#"> <i class="fa fa-book"></i> tarix</a>                     
+        <a href="#"> <i class="fa fa-globe"></i>yangiliklar</a>
+        <form>                                                   <!-- ////////// 1 ///////// -->
+          <input type="text" placeholder="Qidirmoq">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <a style="float: right;" href="#"><i class="fa fa-address-card"></i> saytga ulanish</a>    <!--fa fa-user-->
+    </nav>
+    <div class="container">
+        <div class="content">
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <h5>Sarlavha 5</h5>
+            <div class="img" style="height:200px;">Rasm</div>
+            <p>Biror bir matn..</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+              Commodi molestiae reiciendis harum, 
+              magnam unde ullam velit soluta expedita, 
+              totam illum impedit in maxime at aperiam odit ipsa a architecto eaque!
+            </p>
+          </div>
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <h5>Sarlavha 5</h5>
+            <div class="img" style="height:200px;">Rasm</div>
+            <p>Biror bir matn..</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Consequuntur at culpa ipsam, 
+              laborum neque inventore odit pariatur.
+               Ratione et ex porro impedit commodi, 
+              nulla voluptate praesentium sed. Voluptates, nihil id!
+            </p>
+          </div>
+        </div>
+        <div class="content_side">
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <div class="img" style="height:100px;">Rasm</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+          <div class="card">
+            <h3>Sarlavha 3</h3>
+            <div class="img"><p>Rasm</p></div>
+            <div class="img"><p>Rasm</p></div>
+            <div class="img"><p>Rasm</p></div>
+          </div>
+          <div class="card">
+            <h3>Sarlavha 3</h3>
+            <p>Biror bir matn..</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      
+</body>
+</html>

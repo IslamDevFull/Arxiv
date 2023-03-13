@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: papyrus;                /* ////////// 1 ////////// */
+        }
+        /* header */
+        .header{
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        /* menu konteyner */                    /* ////////// 2 ////////// */
+        .navbar{
+            background-color: #444;
+            overflow: hidden;
+        }
+        /* menu silka ( a ) */                  /* ////////// 3 ////////// */
+        .navbar a{
+            display: block;
+            float: left;
+            color: wheat;
+            padding: 15px 17px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            border-radius: 20px/100px;
+        }
+        /* uy */                                /* ////////// 4 ////////// */
+        .activ{
+            background-color: green;
+        }
+        /* :hover silkaga ( a ) */              /* ////////// 5 ////////// */
+        .navbar a:hover{
+            background-color: black;
+            color: greenyellow;
+        }
+        /* :hover silkaga ( a ) */              /* ////////// 6 ////////// */
+        .navbar a:focus{
+            background-color: black;
+            color: greenyellow;
+        }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sarlavha</h1>
+    </div>
+    <nav class="navbar">                       <!-- ////////// 1 ////////// -->
+        <a class="activ" href="#">uy</a>
+        <a href="#">shaxarlar</a>
+        <a href="#">tarix</a>
+        <a href="#">yangiliklar</a>
+        <a style="float: right;" href="#">saytga ulanish</a>
+    </nav>
+</body>
+</html>

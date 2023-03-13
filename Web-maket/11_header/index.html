@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\test\test\Web-maket\7_menu_icons\font-awesome-4.7.0\css\font-awesome.css">
+    <link rel="shortcut icon" href="E:\test\test\Web-maket\10_favicon\favicon\favicon.ico" type="image/x-icon">  
+    <title>UzBekiston</title>
+    <style>
+        *{
+          box-sizing: border-box;
+          margin: 0;                                                          
+        }
+        body{
+          padding: 0;
+          font-family: papyrus;
+          font-weight: bold;
+          background-color: #f1f1f1;
+          padding: 10px;
+           
+        }
+        /* header */
+        .header{
+          background-image: url(6f3364a6aa83cf39946b361159d30ee9.jpg);       /* ////////// 1 ////////// */
+          background-size: 100% 100%;                                        /* ////////// 2 ////////// */
+          text-align: center;
+          height: 400px;
+          padding: 10px;
+        }
+
+        .header h1{                                                          /* ////////// 3 ////////// */
+          font-size: 50px;
+          clear: both;
+        }
+        .header p{font-size: 30px;}                                          /* ////////// 4 ////////// */
+
+        .header a img{                                                       
+          float: left;
+          width: 50px;
+          transition: all 2s;
+        }
+
+        .header a img:hover{
+          transform: rotate(360deg);
+        }
+
+        /* menu konteyner */
+        .navbar{
+          background-color: #666;                                          /* ////////// 5 ////////// */
+          overflow: hidden;
+          list-style: none;             
+          padding: 0; 
+          margin: 0;                    
+        }
+
+        /* ro'yxatni xammasi chapga ketadi */
+        .navbar li{
+          float: left;                  
+        }
+        /* menu silka ( a ) */
+        .navbar li a{
+          display: inline-block;        
+          color: wheat;
+          padding: 15px 25px;       
+          text-decoration: none;
+          text-transform: capitalize;
+          font-size: 20px;
+         /* border-radius: 20px/100px;*/                                    /* ////////// 6 ////////// */
+        }
+        /* uy */
+        .activ{
+            background-color: green;
+        }
+        /* ikon */                 
+        .navbar a i{
+          font-size: 30px;
+          position: relative;
+          top: 5px;
+          right: 15px;                      
+        }
+        /* :hover silkaga ( a ) */
+        .navbar a:hover{
+          background-color: black;
+          color: greenyellow;
+        }
+        /* :focus silkaga ( a ) */
+        .navbar a:focus{
+          background-color: black;
+          color: greenyellow;
+        }
+
+        /* ochiladigan menu conteyner */                        
+        .drop{
+          background-color: #444;
+        /*  border: 2px solid green; */
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          top: 475px;           /* 1 chisi 250px bo'lsin tushuntirish uchun  ken 240px */  
+          width: 12.5%;
+          display: none;
+        }
+
+        /* ochiladigan menu ro'yxat */
+        .drop li{                       
+      /*    border: 2px solid blue; */
+          width: 100%;
+        }
+
+        /* ochiladigan menu silka */
+        .drop li a{                     
+          border: 2px solid #b8b1b1;
+          width: 100%;
+          border-radius: 0;
+          border-bottom: none;
+        }
+
+        /* mishkani keltirgan payt menu ko'rimadi */
+        .navbar li:hover .drop{         
+          display: block;
+        }
+
+        /* input */                       
+        .navbar input[type="text"]{
+          padding: 10px;
+          width: 380px;
+          border: 0;
+          font-size: 15px;
+        }
+        /* buuton */                      
+        .navbar form button{
+          padding: 6px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background-color: #ddd;
+          font-size: 20px;
+          border: none;
+          cursor: pointer;
+        }
+        /* form */                        
+        form{
+          float: right;
+          margin-top: 8px;
+        }
+        /* buuton :hover */               
+        .navbar form button:hover{
+          background-color: #bbbbbb;
+        }
+
+        /* input focus */                 
+        .navbar form input:focus{
+          outline: 2px solid greenyellow;
+        }
+        
+        /* content  */
+        .content {   
+          float: left;
+          width: 75%;
+        }
+
+        /* o'ng tomon content */
+        .content_side {
+          float: left;
+          width: 25%;
+          background-color: #f1f1f1;
+          padding-left: 20px;
+        }
+
+        /* rasm */
+        .img {
+          background-color: #aaa;
+          width: 100%;
+          padding: 20px;
+        }
+
+        /* Maqolalar uchun karta effektini qo'shamiz */
+        .card {
+          background-color: white;
+          padding: 20px;
+          margin-top: 20px;
+        }
+
+        /* floatni o'chirish */
+        .container:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* podval */
+        .footer {
+          background: #ddd;
+          padding: 50px;
+          text-align: center;
+          height: 200px;          
+          margin-top: 20px;
+          font-size: 30px;
+        }
+
+        /* Ekran kengligi 800px dan kam bo'lganda, ikkita ustunni yonma-yon emas, balki ustiga qo'yamiz. */
+      /*  @media screen and (max-width: 800px) {
+        .content, .content_side {   
+          width: 100%;
+          padding: 0;
+          }
+        } */
+
+        /* Ekran kengligi 400px dan kam bo'lganda, navigatsiya silkalarini yonma-yon emas, balki ustiga qo'yamiz. */
+      /*  @media screen and (max-width: 700px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+          }
+        }*/
+
+      /*  @media screen and (max-width: 700px) {
+          .navbar form{
+            float: none;
+          }
+          .navbar form input[type="text"] {
+            width: 280px;
+            margin-left: 15px;
+          }
+        }*/      
+
+</style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">
+          <img src="E:\test\test\Web-maket\11_header\favicon\apple-touch-icon.png" alt="icon">
+        </a>
+        <h1>O'zbekiston</h1>                    <!-- ////////// 1 //////////-->
+        <p>Bizning Tarixiy Obidalarimiz</p>     <!-- ////////// 2 //////////-->
+    </div>
+      <ul class="navbar">             
+          <li><a class="activ" href="#"><i class="fa fa-home"></i>uy</a></li>
+          <li><a href="#"><i class="fa fa-map-signs"></i>shaxarlar</a>
+            <ul class="drop">         
+              <li><a href="#">toshkent</a></li>
+              <li><a href="#">samarqand</a></li>
+              <li><a href="#">navoiy</a></li>
+              <li><a style="border-bottom: 2px solid red;" href="#">buxoro</a></li>     
+            </ul>
+          </li>
+          <li><a href="#"><i class="fa fa-book"></i>tarix</a></li>        
+          <li><a href="#"><i class="fa fa-globe"></i>yangiliklar</a></li>
+          <form>                                                   
+              <input type="text" placeholder="Qidirmoq">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <li style="float: right;"><a id="a" href="#"><i class="fa fa-address-card"></i>Saytga Ulanish</a></li>
+      </ul>
+    <div class="container">
+        <div class="content">
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <h5>Sarlavha 5</h5>
+            <div class="img" style="height:200px;">Rasm</div>
+            <p>Biror bir matn..</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit
+              Commodi molestiae reiciendis harum, 
+              magnam unde ullam velit soluta expedita, 
+              totam illum impedit in maxime at aperiam odit ipsa a architecto eaque!
+            </p>
+          </div>
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <h5>Sarlavha 5</h5>
+            <div class="img" style="height:200px;">Rasm</div>
+            <p>Biror bir matn..</p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+              Consequuntur at culpa ipsam, 
+              laborum neque inventore odit pariatur.
+               Ratione et ex porro impedit commodi, 
+              nulla voluptate praesentium sed. Voluptates, nihil id!
+            </p>
+          </div>
+        </div>
+        <div class="content_side">
+          <div class="card">
+            <h2>Sarlavha 2</h2>
+            <div class="img" style="height:100px;">Rasm</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+          </div>
+          <div class="card">
+            <h3>Sarlavha 3</h3>
+            <div class="img"><p>Rasm</p></div>
+            <div class="img"><p>Rasm</p></div>
+            <div class="img"><p>Rasm</p></div>
+          </div>
+          <div class="card">
+            <h3>Sarlavha 3</h3>
+            <p>Biror bir matn..</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+      
+</body>
+</html>

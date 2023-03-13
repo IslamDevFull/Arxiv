@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: papyrus;
+            font-weight: bold;
+        }
+        /* header */
+        .header{
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        /* menu konteyner */
+        .navbar{
+            background-color: #444;
+            overflow: hidden;
+        }
+        /* menu silka ( a ) */
+        .navbar a{
+            display: block;
+            float: left;
+            color: wheat;
+            padding: 15px 17px;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 20px;
+            border-radius: 20px/100px;
+        }
+        /* uy */
+        .activ{
+            background-color: green;
+        }
+        /* :hover silkaga ( a ) */
+        .navbar a:hover{
+            background-color: black;
+            color: greenyellow;
+        }
+        /* :focus silkaga ( a ) */
+        .navbar a:focus{
+            background-color: black;
+            color: greenyellow;
+        }
+        /* saytbar */
+        .content_side{
+           /* border: 2px solid black; */
+            width: 25%;
+            padding: 15px;
+            float: left;
+        }
+        /* content */
+        .content{
+           /* border: 2px solid black; */
+            width: 50%;
+            padding: 15px;
+            float: left;
+        }
+        /* konteyner */
+        .container::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* podval */                                    /* ////////// 1 ////////// */
+        .footer{
+            background-color: #f1f1f1;
+            padding: 50px;
+            text-align: center;
+            height: 200px;
+            font-size: 30px;
+        }
+
+        /* planshet va telefon uchun display */
+       /* @media screen and (max-width:600px) {
+            .content.side, .content.middle{
+                width: 100%;
+            }
+        }*/
+        
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sarlavha</h1>
+    </div>
+    <nav class="navbar">
+        <a class="activ" href="#">uy</a>
+        <a href="#">shaxarlar</a>
+        <a href="#">tarix</a>
+        <a href="#">yangiliklar</a>
+        <a style="float: right;" href="#">saytga ulanish</a>
+    </nav>
+    <div class="container">
+        <div class="content_side">
+            <h2>Kolonka</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+            </p>
+        </div>
+        <div class="content">
+            <h2>Kolonka</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+            </p>
+        </div>
+        <div class="content_side">
+            <h2>Kolonka</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, 
+                adipisicing elit. Adipisci, obcaecati ea. 
+                Quasi similique unde alias eveniet, 
+                fugiat esse reprehenderit illo suscipit quas, 
+                tempore consequatur nulla nihil in libero, asperiores rerum!
+            </p>
+        </div>
+    </div>
+    <div class="footer">                    <!-- ////////// 1 ////////// -->
+        <p>Footer</p>
+    </div>
+</body>
+</html>

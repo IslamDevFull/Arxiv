@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\test\test\Web-maket\12_login\font-awesome-4.7.0\css\font-awesome.css">
+    <link rel="shortcut icon" href="E:\test\test\Web-maket\12_login\favicon\favicon.ico" type="image/x-icon">
+    <title>UzBekiston</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           /* border: 2px solid red; */
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: papyrus;
+            background-image: url(scale_1200.jpeg);
+            background-size: 100% 100%;
+            background-blend-mode: multiply;
+            background-color: #666;
+            font-weight: bold;
+        }
+        .container{
+            position: relative;
+            height: 480px;
+            width: 520px;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #ecf0f3;
+            box-shadow: 13px 13px 20px #cbced1;
+        }
+        .logo{
+            position: absolute;
+            width: 100%;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 22px 0;
+        }
+        .logo img{
+            height: 90px;
+            border-radius: 50%;
+            box-shadow: 0 0 2px #5f5f5f,
+                        0 0 0 5px #ecf0fc,
+                        8px 8px 15px #a7aaaf,
+                        -8px -8px 15px #a7aaaf,
+                        -8px -8px 15px #ffffff;
+            transition: all 2s;
+        }
+        .logo img:hover{
+            transform: rotateY(360deg);
+        }
+        .logo p{
+            font-size: 20px;
+            font-weight: bold;
+            transform: translateY(10px);
+            letter-spacing: 0.5px;
+            color: rgb(48,47,47);
+        }
+        form{
+            position: relative;
+            transform: translateY(60px);
+            height: 330px;
+            width: 260px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        form input{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            color: #555;
+            padding: 20px 10px 20px 55px;
+        }
+        .fa-user{
+            position: absolute;
+            transform: translateY(-92px) translateX(-110px);
+            color: #555;
+            font-size: 20px;
+        }
+        .fa-lock{
+            position: absolute;
+            transform: translateX(-110px);
+            color: #555;
+            font-size: 20px;
+        }
+        .userInput, .userPassword{
+            margin-bottom: 30px;
+            border-radius: 25px;
+            box-shadow: inset 8px 8px 8px #cbced1,
+                        inset -8px -8px 8px #ffffff;
+        }
+        form button{
+            font-size: 20px;
+            padding: 10px 100px;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            background-color: orange;
+            text-transform: uppercase;
+            box-shadow: 3px 3px 8px #b1b1b1,
+                        -3px -3px 8px #ffffff;
+            transition: all 0.6s;
+        }
+        form button:hover{
+            background-color: #666;
+            color: orange;
+            text-shadow: 2px 2px 2px red;
+        }
+        form div{
+            transform: translateY(14px);
+            display: flex;
+            color: #555;
+        }
+        form a{
+            color: #555;
+            text-decoration: none;
+            width: 200px;
+            height: 25px;
+        }
+        form a:hover{
+            border-bottom: 1px solid orange;
+        }
+        form span{
+            color: rgb(15,150,204);
+            cursor: pointer;
+            height: 25px;
+        }
+        form span:hover{
+            border-bottom: 1px solid orange;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="E:\test\test\Web-maket\12_login\favicon\apple-touch-icon.png" alt="Logo">
+            <p>UzBekiston.uz</p>
+        </div>
+        <form action="#">
+            <input type="username" class="userInput" placeholder="Login">
+            <i class="fa fa-user"></i>
+            <input type="password" class="userPassword" placeholder="Parol">
+            <i class="fa fa-lock"></i>
+            <button class="login">Login</button>
+            <div>
+                <a href="#">Parolingiz to'g'ri kelmadimi?</a> &nbsp;
+                <p>yoki</p> &nbsp;
+                <span>Ulanish</span>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
